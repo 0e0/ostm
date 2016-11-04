@@ -4,9 +4,10 @@ export default React.createClass({
   render() {
     return (
       <div className='text'>
-        <h3>How do I improve my day to day learning?</h3>
-        <p>I need to go through the process I created today!</p>
+      <h1><a href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
+      <h1> operationspreadthemusic@gmail.com</h1>
       </div>
+
     );
   }
 });

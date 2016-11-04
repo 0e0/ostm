@@ -1,46 +1,78 @@
 @gray: lightgray;
-@blue: darkblue;
+@blue: #252263;
 @black: black;
 @import url('https://fonts.googleapis.com/css?family=Squada+One');
 
 .text {
-  text-align: left;
-  color: black;
+  text-align: center;
+  color: white;
   font-size: 20px;
   padding-top: 3em;
+  backgroun-size: cover;
+  background-color: @blue;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 
-.title {
+.join {
   text-align: center;
+  backgroun-size: cover;
+  background-color: @blue;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  .contact-btn {
+    text-decoration: none;
+    padding: 1em;
+  }
+}
 
+.header {
+  text-align: center;
+  background-size: cover;
+  background-color: @blue;
+  position: absolute;
+  color: white;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .footer {
   text-align: center;
-  background-color: white;
+  background-color: black;
   position: absolute;
+  color: white;
   left: 0;
   bottom: 0;
   right: 0;
 }
+
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: absolute;
+  position: fixed;
   width: 36px;
   height: 30px;
-  left: 2%;
-  top: 5%;
+  left: 3%;
+  top: 3%;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: white;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 34px;
+  width: 34px;
+  margin-right: 1em;
 }
 
 /* Color/shape of close button cross */
@@ -55,10 +87,6 @@
   font-size: 1.15em;
 }
 
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
-}
 
 /* Wrapper for item list */
 .bm-item-list {
@@ -68,9 +96,4 @@
   font-weight: normal;
   font-family: Squada One;
   font-size: 1.2em;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-   background: rgba(0, 0, 0, 0.3);
 }

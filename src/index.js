@@ -1,3 +1,7 @@
+module.exports = function render(locals, callback) {
+  callback(null, '<html>Hello!</html>');
+};
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
@@ -12,10 +16,9 @@ import Resources from './components/Resources';
 
 ReactDOM.render((
   <Router history={hashHistory}>
-    <Route path="/" component={App}>
-      <Route path="/join" component={Join}/>
-      <Route path="/about" component={Home} />
-      <Route path="/events" component={Events} />
-      <Route path="/resources" component={Resources} />
-    </Route>
+    <Route path="/" component={App} />
+    <Route path="/join" component={Join} />
+    <Route path="/about" component={Home} />
+    <Route path="/events" component={Events} />
+    <Route path="/resources" component={Resources} />
   </Router>), document.querySelector('.container'));

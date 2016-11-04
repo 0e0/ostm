@@ -18,12 +18,12 @@ module.exports = {
       {
         test: /\.less$/,
         loaders: ['style', 'css', 'less'],
-      }
+      },
     ]
   },
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/build'
+    path: __dirname + '/build',
   },
   plugins: [HTMLWebpackPluginConfig]
 }

@@ -11,9 +11,6 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <div>
-          <h1 className="title">Operation Spread the Music</h1>
-        </div>
         <div id="outer-container">
           <Menu left width={ 280 } outerContainerId={ "outer-container" }>
             <RadiumLink className="bm-item-list" to="/"></RadiumLink>
@@ -23,14 +20,9 @@ export default class App extends Component {
             <RadiumLink className="bm-item-list" to="/resources">Resources</RadiumLink>
           </Menu>
           {this.props.children}
-
-          <div className="footer">
-          <div>
-            <h2>I really need to time myself so I do not forget to eat or exercise.</h2>
+          <div className="header">
+            <h1>Operation Spread the Music</h1>
           </div>
-            <h1>I am a footer!</h1>
-          </div>
-
         </div>
       </div>
 
