@@ -1,10 +1,20 @@
 import React from 'react';
+import { RouteTransition } from 'react-router-transition';
 
 export default React.createClass({
   render() {
     return (
       <div className='text'>
-        <h1>Coming Soon! membership</h1>
+        <RouteTransition
+          pathname={this.props.location.pathname}
+          atEnter={{ translateY: -100 }}
+          atLeave={{ translateY: 100 }}
+          atActive={{ translateY: 0 }}
+          mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
+          >
+          <h1>membership</h1>
+          <img src={require("./coming-soon.gif")} />
+        </RouteTransition>
       </div>
 
     );

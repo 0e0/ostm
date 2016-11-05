@@ -1,12 +1,23 @@
 import React from 'react';
+import { RouteTransition } from 'react-router-transition';
+
 
 export default React.createClass({
+
   render() {
     return (
       <div className='text'>
-        <h1>Coming Soon! blog</h1>
-      </div>
-
+        <RouteTransition
+          pathname={this.props.location.pathname}
+          atEnter={{ translateX: 100 }}
+          atLeave={{ translateX: -100 }}
+          atActive={{ translateX: 0 }}
+          mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
+          >
+              <h1>blog</h1>
+              <img src={require("./coming-soon.gif")} />
+          </RouteTransition>
+        </div>
     );
   }
 });

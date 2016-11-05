@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
 
 import App from './components/App';
-import styles from './index.less'
+import styles from './index.less';
 import Home from './components/Home';
 import Join from './components/Join';
 import Events from './components/Events';
