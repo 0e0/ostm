@@ -1,10 +1,6 @@
-module.exports = function render(locals, callback) {
-  callback(null, '<html>Hello!</html>');
-};
-
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 
 import App from './components/App';
 import styles from './index.less'
@@ -12,13 +8,18 @@ import Home from './components/Home';
 import Join from './components/Join';
 import Events from './components/Events';
 import Resources from './components/Resources';
-
+import Membership from './components/Membership';
+import Blog from './components/Blog';
+import Media from './components/Media';
 
 ReactDOM.render((
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={App} />
     <Route path="/join" component={Join} />
     <Route path="/about" component={Home} />
     <Route path="/events" component={Events} />
+    <Route path="/membership" component={Membership} />
     <Route path="/resources" component={Resources} />
+    <Route path="/blog" component={Blog} />
+    <Route path="/media" component={Media} />
   </Router>), document.querySelector('.container'));

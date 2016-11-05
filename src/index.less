@@ -1,5 +1,5 @@
 @gray: lightgray;
-@blue: #252263;
+@blue: #1D1D39;
 @black: black;
 @import url('https://fonts.googleapis.com/css?family=Squada+One');
 
@@ -17,21 +17,6 @@
   top: 0;
 }
 
-.join {
-  text-align: center;
-  backgroun-size: cover;
-  background-color: @blue;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  .contact-btn {
-    text-decoration: none;
-    padding: 1em;
-  }
-}
-
 .header {
   text-align: center;
   background-size: cover;
@@ -43,6 +28,129 @@
   right: 0;
   bottom: 0;
 }
+
+
+.logo {
+  width: 25em;
+  height: 25em;
+  position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+}
+
+// phone
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 20em;
+    height: 20em;
+
+  }
+}
+
+.arrow-btn-up {
+  width: 7em;
+  background-color: @blue;
+  position: absolute;
+  top: 0;left: 0; right:0;
+  margin: auto;
+  z-index: 5;
+  border-radius: 20px;
+  .membership-btn {
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-bottom: .5%;
+    margin-top: 3%;
+    color: white;
+  }
+}
+
+.arrow-btn-right {
+  width: 4em;
+  background-color: @blue;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: auto;
+  border-radius: 20px;
+  z-index: 5;
+  .blog-btn {
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-right: 3%;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    color: white;
+
+  }
+}
+
+//  phone
+@media screen and (max-width: 500px) {
+  .arrow-btn-right {
+    visibility: hidden;
+  }
+}
+
+.arrow-btn-down {
+  width: 4em;
+  background-color: @blue;
+  position: absolute;
+  bottom: 0;left: 0; right:0;
+  margin: auto;
+  z-index: 10;
+  border-radius: 20px;
+  .join-btn {
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-top: .5%;
+    margin-bottom: 3%;
+    color: white;
+  }
+}
+
+.arrow-btn-left {
+  width: 4em;
+  background-color: @blue;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: auto;
+  border-radius: 20px;
+  z-index: 5;
+  .media-btn {
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    color: white;
+  }
+}
+
+//  phone
+@media screen and (max-width: 500px) {
+  .arrow-btn-left {
+    visibility: hidden;
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+// .join {
+//   text-align: center;
+//   backgroun-size: cover;
+//   background-color: @blue;
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   top: 0;
+//   .contact-btn {
+//     text-decoration: none;
+//     padding: 1em;
+//   }
+// }
 
 .footer {
   text-align: center;
@@ -56,11 +164,13 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 36px;
   height: 30px;
   left: 3%;
   top: 3%;
+  margin: auto;
+  z-index: 20;
 }
 
 /* Color/shape of burger icon bars */
@@ -68,6 +178,13 @@
   background: white;
 }
 
+.black {
+  background-color: black;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 34px;
