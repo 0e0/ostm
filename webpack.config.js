@@ -1,3 +1,6 @@
+const path = require('path');
+const webpack = require('webpack');
+
 
 module.exports = {
   entry: [
@@ -37,7 +40,7 @@ module.exports = {
   resolveLoader: {
     root: path.resolve(__dirname, 'node_modules')
   },
-  
+
   devServer: {
     historyApiFallback: true,
     contentBase: './'
