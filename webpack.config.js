@@ -23,6 +23,11 @@ module.exports = {
     }
     ]
   },
+  resolveLoader: {
+      modulesDirectories: [
+          '/users/path/a/node_modules'
+      ]
+},
   devServer: {
     historyApiFallback: true,
     contentBase: './'
