@@ -32,6 +32,6 @@
     "image-webpack-loader": "^3.0.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
-    "style-loader": "^0.13.1",
+    "style-loader": "^0.13.1"
   }
 }
