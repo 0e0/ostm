@@ -7,7 +7,7 @@
     "build": "webpack",
     "dev": "webpack-dev-server",
     "start": "node server.js",
-    "postinstall": "webpack -p",
+    "postinstall": "webpack -p"
   },
   "author": "Ejerson Balabas",
   "license": "ISC",
