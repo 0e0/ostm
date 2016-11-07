@@ -1,11 +1,3 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-  template: __dirname + './src/index.html',
-  filename: 'index.html',
-  inject: 'body'
-});
-
-
 module.exports = {
   entry: __dirname + '/src/index.js',
   module: {
@@ -13,7 +5,10 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel'
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015']
+        }
       },
       {
         test: /\.less$/,
@@ -37,5 +32,4 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
-  plugins: [HTMLWebpackPluginConfig]
 }
