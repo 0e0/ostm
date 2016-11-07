@@ -7,7 +7,7 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 
 
 module.exports = {
-  entry: __dirname + '/src/index.js',
+  entry: __dirname + './src/index.js',
   module: {
     loaders: [
       {
@@ -33,8 +33,9 @@ module.exports = {
     contentBase: './'
   },
   output: {
-    filename: 'bundle.js',
-    path: __dirname + '/build',
+    path: __dirname,
+    publicPath: '/',
+    filename: 'bundle.js'
   },
   plugins: [HTMLWebpackPluginConfig]
 }
