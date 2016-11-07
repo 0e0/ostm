@@ -13,10 +13,9 @@ export default React.createClass({
           mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
           >
           <h1>membership</h1>
-          <img src={require("./images/coming-soon.gif")} />
+          <img src={require('./images/coming-soon.gif')} />
         </RouteTransition>
       </div>
-
     );
   }
 });

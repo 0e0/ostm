@@ -13,7 +13,7 @@ export default class App extends Component {
       <div className="header">
             <div className="arrow-btn-up">
               <Link to="/membership"><h4 className="membership-btn">membership</h4></Link>
-              <Link to="/membership"><img src={require("./images/arrow-up.png")} /></Link>
+              <Link className="arrow" to="/membership"><img src={require('./images/arrow-up.png')} /></Link>
             </div>
             <div className="arrow-btn-right">
                 <Link to="/blog"><img src={require("./images/arrow-right.png")} /></Link>

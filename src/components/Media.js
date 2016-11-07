@@ -13,7 +13,7 @@ export default React.createClass({
           mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
           >
           <h1>media</h1>
-          <img src={require("./images/coming-soon.gif")} />
+          <img src={require('./images/coming-soon.gif')} />
           </RouteTransition>
         </div>
     );

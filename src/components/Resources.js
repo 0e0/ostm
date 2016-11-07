@@ -5,9 +5,8 @@ export default React.createClass({
     return (
       <div className='text'>
       <h1>resources</h1>
-      <img src={require("./images/coming-soon.gif")} />
+      <img src={require('./images/coming-soon.gif')} />
       </div>
-
     );
   }
 });
