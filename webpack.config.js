@@ -7,10 +7,6 @@ module.exports = {
     path: __dirname,
     filename: 'bundle.js'
   },
-  "engines": {
-    "node": "6.6.0",
-    "npm": "3.10.3"
-  }
   module: {
     loaders: [{
         test: /\.js$/,
