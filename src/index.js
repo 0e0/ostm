@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
 
-import App from './components/App';
+import App from './components/app';
 import styles from './index.less';
-import Home from './components/Home';
+import About from './components/About';
 import Join from './components/Join';
 import Events from './components/Events';
 import Resources from './components/Resources';
@@ -16,7 +16,7 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App} />
     <Route path="/join" component={Join} />
-    <Route path="/about" component={Home} />
+    <Route path="/about" component={About} />
     <Route path="/events" component={Events} />
     <Route path="/membership" component={Membership} />
     <Route path="/resources" component={Resources} />
