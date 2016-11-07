@@ -4,14 +4,15 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path: __dirname,
-    filename: 'bundle.js'
+    path: __dirname + '/build',
+    filename: 'built.js'
   },
   module: {
-    loaders: [{
+    loaders: [
+      {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015', 'stage-1']
         }
