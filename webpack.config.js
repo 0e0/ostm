@@ -1,6 +1,6 @@
 
 module.exports = {
-  entry: [ '/src/inder.js'
+  entry: [ '/src/index.js'
   ],
   output: {
     path: __dirname,
