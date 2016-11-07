@@ -12,8 +12,7 @@ import Blog from './components/Blog';
 import Media from './components/Media';
 
 export default (
-  <div>
-  <Route path="/" component={App} />
+  <Route path="/" component={App}>
   <Route path="/join" component={Join} />
   <Route path="/about" component={About} />
   <Route path="/events" component={Events} />
@@ -21,5 +20,5 @@ export default (
   <Route path="/resources" component={Resources} />
   <Route path="/blog" component={Blog} />
   <Route path="/media" component={Media} />
-  </div>
+  </Route>
 );
