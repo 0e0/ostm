@@ -28,6 +28,10 @@ module.exports = {
     }
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './'
+  },
   output: {
     filename: 'bundle.js',
     path: __dirname + '/build',
