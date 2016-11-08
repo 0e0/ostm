@@ -52,8 +52,6 @@ module.exports = {
   },
   plugins: [
     HTMLWebpackPluginConfig,
-    new ExtractTextPlugin("style.css", {
-            allChunks: true
-        })
+    new ExtractTextPlugin("style.css")
   ]
 };
