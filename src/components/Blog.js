@@ -14,10 +14,10 @@ export default React.createClass({
           atActive={{ translateX: 0 }}
           mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
           >
-              <h1>blog</h1>
-              <img src={require('./images/coming-soon.gif')} />
-          </RouteTransition>
-        </div>
+          <h1>blog</h1>
+          <img src={require('./images/coming-soon.gif')} />
+        </RouteTransition>
+      </div>
     );
   }
 });
