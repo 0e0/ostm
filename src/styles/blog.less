@@ -1,0 +1,66 @@
+.first-blog {
+  background-color: @gray;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: @rale;
+  padding: 1%;
+
+  p {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+  }
+
+  iframe {
+    border-color: @yellow;
+    margin: 5%;
+  }
+
+  h2 {
+    background-color: @yellow;
+    color: white;
+    padding: 5%;
+  }
+  h3 {
+    font-weight: bolder;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+  }
+
+  .one, .two {
+  padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  iframe {
+    margin: 10%;
+    width: 90%;
+    height: 100%;
+  }
+}
+
+
+
+@media screen and (min-width: 800px) {
+  .first-blog {
+    margin-left: 20%;
+    margin-right: 20%;
+    h3 {
+      font-weight: bolder;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    p {
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: left;
+    }
+    .one, .two {
+    padding-left: 20%;
+    }
+  }
+}

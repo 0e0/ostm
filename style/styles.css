@@ -1,10 +1,72 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);/*** Font ***/
+@import url(https://fonts.googleapis.com/css?family=Raleway);.first-blog {
+  background-color: #FFFFF6;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Raleway;
+  padding: 1%;
+}
+.first-blog p {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+.first-blog iframe {
+  border-color: #FFD828;
+  margin: 5%;
+}
+.first-blog h2 {
+  background-color: #FFD828;
+  color: white;
+  padding: 5%;
+}
+.first-blog h3 {
+  font-weight: bolder;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+.first-blog .one,
+.first-blog .two {
+  padding-left: 10%;
+}
+@media screen and (max-width: 100px) {
+  iframe {
+    margin: 10%;
+    width: 90%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .first-blog {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .first-blog h3 {
+    font-weight: bolder;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .first-blog p {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+  }
+  .first-blog .one,
+  .first-blog .two {
+    padding-left: 20%;
+  }
+}
+/*** Font ***/
+a:link {
+  text-decoration: none;
+}
 .text {
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: 1em;
   font-family: Raleway;
-  padding-top: 3em;
+  padding-top: 1em;
   background-size: cover;
   background-color: #333366;
   position: absolute;
@@ -71,7 +133,7 @@
 @media screen and (max-height: 370px) {
   .arrow-btn-up,
   .arrow-btn-down {
-    opacity: 0;
+    visibility: hidden;
   }
 }
 .arrow-btn-right {
@@ -142,9 +204,6 @@
   .arrow-btn-left {
     visibility: hidden;
   }
-}
-a:link {
-  text-decoration: none;
 }
 /* Position and sizing of burger button */
 .bm-burger-button {

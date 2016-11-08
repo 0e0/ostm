@@ -1,4 +1,6 @@
-@gray: lightgray;
+@import "blog.less";
+
+@gray: #FFFFF6;
 @blue: #333366;
 @yellow: #FFD828;
 
@@ -6,13 +8,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @rale: Raleway;
 
+a:link{
+  text-decoration: none;
+}
 
 .text {
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: 1em;
   font-family: @rale;
-  padding-top: 3em;
+  padding-top: 1em;
   background-size: cover;
   background-color: @blue;
   position: absolute;
@@ -22,6 +27,8 @@
   bottom: 0;
   top: 0;
 }
+
+//phone
 
 .header {
   text-align: center;
@@ -143,9 +150,7 @@
   }
 }
 
-a:link {
-  text-decoration: none;
-}
+
 
 /* Position and sizing of burger button */
 .bm-burger-button {

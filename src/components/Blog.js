@@ -1,9 +1,9 @@
 import React from 'react';
 import { RouteTransition } from 'react-router-transition';
 
+import ReasonforBeing from './blogs/11-8-16';
 
 export default React.createClass({
-
   render() {
     return (
       <div className='text'>
@@ -15,8 +15,7 @@ export default React.createClass({
           mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
           >
           <div>
-          <h1>blog</h1>
-          <img src={require('./images/coming-soon.gif')} />
+            <ReasonforBeing />
           </div>
         </RouteTransition>
       </div>
