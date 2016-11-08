@@ -12,8 +12,10 @@ export default React.createClass({
           atActive={{ translateY: 0 }}
           mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
           >
+          <div>
           <h1><a href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
           <h1>operationspreadthemusic@gmail.com</h1>
+          </div>
         </RouteTransition>
       </div>
     );

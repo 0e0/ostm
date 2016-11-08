@@ -14,8 +14,10 @@ export default React.createClass({
           atActive={{ translateX: 0 }}
           mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
           >
+          <div>
           <h1>blog</h1>
           <img src={require('./images/coming-soon.gif')} />
+          </div>
         </RouteTransition>
       </div>
     );
