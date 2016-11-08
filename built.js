@@ -104,14 +104,14 @@
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
-	  _react2.default.createElement(Route, { path: '/', component: _app2.default }),
-	  _react2.default.createElement(Route, { path: '/join', component: _Join2.default }),
-	  _react2.default.createElement(Route, { path: '/about', component: _About2.default }),
-	  _react2.default.createElement(Route, { path: '/events', component: _Events2.default }),
-	  _react2.default.createElement(Route, { path: '/membership', component: _Membership2.default }),
-	  _react2.default.createElement(Route, { path: '/resources', component: _Resources2.default }),
-	  _react2.default.createElement(Route, { path: '/blog', component: _Blog2.default }),
-	  _react2.default.createElement(Route, { path: '/media', component: _Media2.default })
+	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _app2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/join', component: _Join2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/events', component: _Events2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/membership', component: _Membership2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/resources', component: _Resources2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/blog', component: _Blog2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/media', component: _Media2.default })
 	), document.querySelector('.container'));
 
 /***/ },

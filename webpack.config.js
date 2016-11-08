@@ -4,7 +4,7 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path: __dirname + '/build',
+    path: __dirname,
     filename: 'built.js'
   },
   module: {
