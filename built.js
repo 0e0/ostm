@@ -63,9 +63,9 @@
 
 	var _reactRouter = __webpack_require__(160);
 
-	var _app = __webpack_require__(216);
+	var _App = __webpack_require__(216);
 
-	var _app2 = _interopRequireDefault(_app);
+	var _App2 = _interopRequireDefault(_App);
 
 	var _index = __webpack_require__(301);
 
@@ -104,7 +104,7 @@
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
-	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _app2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _App2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/join', component: _Join2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/events', component: _Events2.default }),
