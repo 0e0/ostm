@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        loaders: ['style', 'css', 'less']  
+        loaders: ['style', 'css', 'less']
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -27,6 +27,7 @@ module.exports = {
             'file?hash=sha512&digest=hex&name=[hash].[ext]',
             'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ],
+
     }]
   },
   resolve: {
