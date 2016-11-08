@@ -1,6 +1,4 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-// const path = require('path');
-// const webpack = require('webpack');
+
 
 module.exports = {
   entry: [
@@ -22,7 +20,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
+        loader: ['less', 'css', 'style-loader']
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
