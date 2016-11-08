@@ -51,6 +51,6 @@ module.exports = {
   },
   plugins: [
     HTMLWebpackPluginConfig,
-    new ExtractTextPlugin('styles.css')
+    new ExtractTextPlugin('index.less')
   ]
 };
