@@ -44,7 +44,7 @@ module.exports = {
       }]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.less']
+    extensions: ['', '.js', '.jsx', '.css']
   },
   devServer: {
     historyApiFallback: true,
