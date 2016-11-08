@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
 
-import App from './components/app';
+import App from './components/App';
 import styles from './index.less';
 import About from './components/About';
 import Join from './components/Join';
