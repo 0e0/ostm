@@ -1,4 +1,4 @@
-require("./index.less");
+require("./src/index.less");
 
 module.exports = {
   entry: [
