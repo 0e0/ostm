@@ -14,6 +14,12 @@ export default React.createClass({
                 >
                 <h1><a href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
                 <h1> operationspreadthemusic@gmail.com</h1>
+                <div
+                  class="fb-like"
+                  data-share="true"
+                  data-width="450"
+                  data-show-faces="true">
+                </div>
                 </RouteTransition>
               </div>
     );
