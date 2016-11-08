@@ -1,4 +1,4 @@
-const css = require("!raw!less!./src/index.less");
+require("./index.less");
 
 module.exports = {
   entry: [
