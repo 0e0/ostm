@@ -9,8 +9,10 @@
     "start": "node server.js",
     "postinstall": "webpack -p",
     "git-commit": "git add . && git commit -m 'update'",
-    "git-push": "git push heroku master",
-    "deploy": "npm run git-commit && npm run git-push"
+    "git-push-deploy": "git push heroku master",
+    "git-push-save": "git push origin master",
+    "deploy": "npm run git-commit && npm run git-push-deploy",
+    "save": "npm run git-commit && npm run git-push-save"
   },
   "author": "Ejerson Balabas",
   "license": "ISC",
