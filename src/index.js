@@ -12,7 +12,7 @@ import Membership from './components/Membership';
 import Blog from './components/Blog';
 import Media from './components/Media';
 
-
+require('./style/index.less');
 
 ReactDOM.render((
   <Router history={browserHistory}>
