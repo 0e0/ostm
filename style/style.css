@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);/*** Font ***/
+.text {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  font-family: Raleway;
+  padding-top: 3em;
+  background-size: cover;
+  background-color: #333366;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.header {
+  text-align: center;
+  background-size: cover;
+  background-color: #333366;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.logo {
+  width: 25em;
+  height: 25em;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 20em;
+    height: 20em;
+  }
+}
+.text-btn-style {
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  color: white;
+  font-family: Raleway;
+  text-rendering: optimizeLegibility;
+}
+.arrow-btn-up {
+  width: 7em;
+  position: absolute;
+  background-color: #333366;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  border-radius: 20px;
+}
+.arrow-btn-up .membership-btn {
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  color: white;
+  font-family: Raleway;
+  text-rendering: optimizeLegibility;
+  margin-bottom: .5%;
+  margin-top: 3%;
+}
+@media screen and (max-height: 370px) {
+  .arrow-btn-up,
+  .arrow-btn-down {
+    opacity: 0;
+  }
+}
+.arrow-btn-right {
+  width: 4em;
+  background-color: #333366;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: auto;
+  border-radius: 20px;
+  z-index: 1;
+}
+.arrow-btn-right .blog-btn {
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  color: white;
+  font-family: Raleway;
+  text-rendering: optimizeLegibility;
+  margin-right: 3%;
+  margin-top: .5%;
+  margin-bottom: .5%;
+}
+@media screen and (max-width: 500px) {
+  .arrow-btn-right {
+    visibility: hidden;
+  }
+}
+.arrow-btn-down {
+  width: 4em;
+  background-color: #333366;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  border-radius: 20px;
+}
+.arrow-btn-down .join-btn {
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  color: white;
+  font-family: Raleway;
+  text-rendering: optimizeLegibility;
+  margin-top: .5%;
+  margin-bottom: 3%;
+}
+.arrow-btn-left {
+  width: 4em;
+  background-color: #333366;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: auto;
+  border-radius: 20px;
+  z-index: 1;
+}
+.arrow-btn-left .media-btn {
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  color: white;
+  font-family: Raleway;
+  text-rendering: optimizeLegibility;
+  margin-top: .5%;
+  margin-bottom: .5%;
+}
+@media screen and (max-width: 500px) {
+  .arrow-btn-left {
+    visibility: hidden;
+  }
+}
+a:link {
+  text-decoration: none;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 3%;
+  top: 3%;
+  margin: auto;
+  z-index: 5;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 34px;
+  width: 34px;
+  margin-right: 1em;
+}
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+}
+/* General sidebar styles */
+.bm-menu {
+  background: #FFD828;
+  font-weight: normal;
+}
+/* Wrapper for item list */
+.bm-item-list {
+  padding: 3%;
+  font-family: Raleway;
+  font-size: 1.2em;
+  color: white;
+}
