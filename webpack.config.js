@@ -1,4 +1,4 @@
-require("./src/index.less");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: [
@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        loaders: ['style', 'css', 'less']
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
