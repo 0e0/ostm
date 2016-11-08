@@ -1,3 +1,12 @@
+const webpack = require('webpack');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
+  template: __dirname + '/src/index.html',
+  filename: 'index.html',
+  inject: 'body'
+});
+
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
 module.exports = {
@@ -5,8 +14,9 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path: __dirname,
-    filename: 'built.js'
+    path: __dirname + '/build',
+    publicPath: '/',
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
@@ -20,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        loader: ['less', 'css', 'style-loader']
+        loader: "style!css!less"
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -31,11 +41,16 @@ module.exports = {
 
     }]
   },
+
   resolve: {
     extensions: ['', '.js', '.jsx', '.less']
   },
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
-}
+  },
+  plugins: [
+    HTMLWebpackPluginConfig,
+    new ExtractTextPlugin('styles.css')
+  ]
+};
