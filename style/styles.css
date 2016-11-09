@@ -1,65 +1,93 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);.first-blog {
   background-color: #FFFFF6;
   color: black;
-  margin-left: 10%;
-  margin-right: 10%;
   font-family: Raleway;
-  padding: 1%;
+  padding: 5%;
+  text-align: left;
+  margin: 10% 10% 0 10%;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 1px;
 }
 .first-blog p {
   padding-left: 5%;
   padding-right: 5%;
-  text-align: left;
-}
-.first-blog iframe {
-  border-color: #FFD828;
-  margin: 5%;
 }
 .first-blog h2 {
   background-color: #FFD828;
   color: white;
   padding: 5%;
+  text-shadow: 0.1px 0.1px #333366;
 }
 .first-blog h3 {
-  font-weight: bolder;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: left;
+  font-weight: 900;
 }
 .first-blog .one,
 .first-blog .two {
   padding-left: 10%;
 }
-@media screen and (max-width: 100px) {
-  iframe {
-    margin: 10%;
-    width: 90%;
-    height: 100%;
+.first-blog iframe {
+  border-color: black;
+  margin: 5% 0 5% 0;
+  width: 100%;
+}
+@media screen and (min-width: 200px) {
+  .first-blog {
+    font-size: 110%;
+    margin: 5% 5% 0 5%;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 375px) {
   .first-blog {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  .first-blog h3 {
-    font-weight: bolder;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .first-blog p {
-    padding-left: 10%;
-    padding-right: 10%;
+    font-size: 110%;
     text-align: left;
   }
-  .first-blog .one,
-  .first-blog .two {
-    padding-left: 20%;
+  iframe {
+    height: 12em;
+  }
+}
+@media screen and (min-width: 425px) {
+  .first-blog {
+    font-size: 110%;
+  }
+  iframe {
+    height: 15em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .first-blog {
+    font-size: 160%;
+  }
+  iframe {
+    height: 20em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .first-blog {
+    font-size: 160%;
+  }
+  iframe {
+    height: 25em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .first-blog {
+    font-size: 180%;
+  }
+}
+@media screen and (min-width: 4000px) {
+  .first-blog {
+    font-size: 200%;
   }
 }
 /*** Font ***/
 a:link {
   text-decoration: none;
+}
+html {
+  background-color: #333366;
+}
+* {
+  box-sizing: border-box;
 }
 .text {
   text-align: center;
@@ -68,7 +96,6 @@ a:link {
   font-family: Raleway;
   padding-top: 1em;
   background-size: cover;
-  background-color: #333366;
   position: absolute;
   background-repeat: no-repeat;
   left: 0;
@@ -79,7 +106,6 @@ a:link {
 .header {
   text-align: center;
   background-size: cover;
-  background-color: #333366;
   position: absolute;
   left: 0;
   top: 0;
