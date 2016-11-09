@@ -51,12 +51,12 @@ export default React.createClass({
             see the documentary “Alive Inside,” available on Netflix.
             Below is a short excerpt from the documentary.
             </h3>
-            <iframe src="https://www.youtube.com/embed/8HLEr-zP3fc" allowfullScreen>
+            <iframe src="https://www.youtube.com/embed/8HLEr-zP3fc" allowFullScreen>
             </iframe>
               <h2>Help us make this operation a success.</h2>
 
               <div className="sources">
-            
+
               <p>Sources</p>
               <p>1. <a href="http://online.wsj.com/ad/article/longtermcare-future">The Wall Street Journal</a></p>
               <p>2. <a href='http://nursinghomediaries.com/howmany/'>Nursing Home Diaries</a></p>
