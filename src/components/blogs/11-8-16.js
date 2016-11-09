@@ -53,7 +53,7 @@ export default React.createClass({
             see the documentary “Alive Inside,” available on Netflix.
             Below is a short excerpt from the documentary.
             </h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8HLEr-zP3fc" frameborder="0" allowfullscreen>
+            <iframe src="https://www.youtube.com/embed/8HLEr-zP3fc" frameborder="0" allowFullScreen>
             </iframe>
             <h2>
             Help us make this operation a success, join and contact us at
@@ -65,7 +65,6 @@ export default React.createClass({
               <p>2. <a href='http://nursinghomediaries.com/howmany/'>Nursing Home Diaries</a></p>
               <p>3. <a href='https://assets.aarp.org/rgcenter/il/fs10r_homes.pdf'>AARP</a></p>
             </div>
-
             </div>
           </div>
     );
