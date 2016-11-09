@@ -3,24 +3,22 @@ import React from 'react';
 export default React.createClass({
   render() {
     return (
-
-          <div className="first-blog">
-          <div className="blog-format">
-          <h1>Our Reason for Being</h1>
-          <h3>What is OStM trying to fix?</h3>
-            <p>Operation Spread the Music was created in response to
-            the segregation present in the community.
-            OStM endeavors to foster greater interaction
-            between members of the community through music and education,
-            by doing the following:</p>
-            <p className="one">
-            1. Bringing performers of various age groups
-            to nursing homes and assisted living facilities
-            </p>
-            <p className="two">
-            2. Encouraging musicians of all ages to perform
-              for a cause greater than themselves
-            </p>
+      <div className="first-blog">
+        <h1>Our Reason for Being</h1>
+        <h3>What is OStM trying to fix?</h3>
+          <p>Operation Spread the Music was created in response to
+          the segregation present in the community.
+          OStM endeavors to foster greater interaction
+          between members of the community through music and education,
+          by doing the following:</p>
+          <p className="one">
+          1. Bringing performers of various age groups
+          to nursing homes and assisted living facilities
+          </p>
+          <p className="two">
+          2. Encouraging musicians of all ages to perform
+          for a cause greater than themselves
+          </p>
             <h3>Why is OStM addressing this issue?</h3>
             <p>Segregation and isolation is a human issue.
             OStM hopes to provide a channel for human connection through outreach.
@@ -53,18 +51,16 @@ export default React.createClass({
             see the documentary “Alive Inside,” available on Netflix.
             Below is a short excerpt from the documentary.
             </h3>
-            <iframe src="https://www.youtube.com/embed/8HLEr-zP3fc" frameborder="0" allowFullScreen>
+            <iframe src="https://www.youtube.com/embed/8HLEr-zP3fc" allowfullScreen>
             </iframe>
-            <h2>
-            Help us make this operation a success, join and contact us at
-            operationspreadthemusic@gmail.com.
-            </h2>
-            <div className="sources">
+              <h2>Help us make this operation a success.</h2>
+
+              <div className="sources">
+            
               <p>Sources</p>
               <p>1. <a href="http://online.wsj.com/ad/article/longtermcare-future">The Wall Street Journal</a></p>
               <p>2. <a href='http://nursinghomediaries.com/howmany/'>Nursing Home Diaries</a></p>
               <p>3. <a href='https://assets.aarp.org/rgcenter/il/fs10r_homes.pdf'>AARP</a></p>
-            </div>
             </div>
           </div>
     );

@@ -1,61 +1,35 @@
 .first-blog {
   background-color: @gray;
   color: black;
-  margin-left: 10%;
-  margin-right: 10%;
+  
   font-family: @rale;
-  padding: 1%;
+  padding: 5%;
+  text-align: left;
+  text-rendering: optimizeLegibility;
 
   p {
     padding-left: 5%;
     padding-right: 5%;
-    text-align: left;
   }
-
-  iframe {
-    border-color: @yellow;
-    width: 400px;
-    height: 215px;
-    position: inherit;
-  }
-
 
   h2 {
     background-color: @yellow;
     color: white;
     padding: 5%;
+    margin: 5% 0 5% 0;
+    text-shadow: .1px .1px @blue;
   }
+
   h3 {
-    font-weight: bolder;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: left;
+    font-weight: 900;
   }
 
   .one, .two {
   padding-left: 10%;
   }
-}
 
-
-
-@media screen and (min-width: 800px) {
-  .first-blog {
-    margin-left: 20%;
-    margin-right: 20%;
-    h3 {
-      font-weight: bolder;
-      padding-left: 10%;
-      padding-right: 10%;
-    }
-
-    p {
-      padding-left: 10%;
-      padding-right: 10%;
-      text-align: left;
-    }
-    .one, .two {
-    padding-left: 20%;
-    }
+  iframe {
+    border-color: black;
   }
+
 }
