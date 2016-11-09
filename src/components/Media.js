@@ -3,6 +3,7 @@ import { RouteTransition } from 'react-router-transition';
 
 export default React.createClass({
   render() {
+
     return (
       <div className='text'>
         <RouteTransition
@@ -12,10 +13,8 @@ export default React.createClass({
           atActive={{ translateX: 0 }}
           mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
           >
-          <div>
-            <img src={require('./images/media/1.jpg')} />
-            <img src={require('./images/media/2.jpg')} />
-          </div>
+          <h1>media</h1>
+          <img src={require('./images/coming-soon.gif')} />
           </RouteTransition>
         </div>
     );
