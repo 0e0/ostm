@@ -15,7 +15,15 @@ export default React.createClass({
           >
           <div>
           <h1>media</h1>
-          <img src={require('./images/coming-soon.gif')} />
+          <img src={require('./images/media/1.jpg')} />
+          <img src={require('./images/media/2.jpg')} />
+          <img src={require('./images/media/3.jpg')} />
+          <img src={require('./images/media/4.jpg')} />
+          <img src={require('./images/media/5.jpg')} />
+          <img src={require('./images/media/6.jpg')} />
+          <img src={require('./images/media/7.jpg')} />
+          <img src={require('./images/media/8.jpg')} />
+          <img src={require('./images/media/9.jpg')} />
           </div>
           </RouteTransition>
         </div>
