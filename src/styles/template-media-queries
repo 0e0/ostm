@@ -1,0 +1,35 @@
+// Phone
+@media screen and (min-width: 200px) {
+  
+}
+
+// Smaller Screens
+@media screen and (min-width: 375px) {
+
+}
+
+// Smaller Screens
+@media screen and (min-width: 425px) {
+
+}
+
+// Ipad
+@media screen and (min-width: 768px) {
+
+}
+
+// LAPTOPS
+@media screen and (min-width: 1024px) {
+
+}
+
+
+// Desktop
+@media screen and (min-width: 1440px) {
+
+}
+
+// Largest Screen
+@media screen and (min-width: 4000px) {
+
+}
