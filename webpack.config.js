@@ -29,20 +29,17 @@ module.exports = {
         }
       },
       {
-          test: /\.css$/,
-          loader: ExtractTextPlugin.extract("style-loader", "css-loader")
-      },
-      {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
-            'file?hash=sha512&digest=hex&name=[hash].[ext]',
+            'file?hash=sha512&digest=hex&name=[name].[ext]',
             'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
-      }]
+    }
+    ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.css']
@@ -53,6 +50,11 @@ module.exports = {
   },
   plugins: [
     // HTMLWebpackPluginConfig,
-    new ExtractTextPlugin("style/styles.css")
+    new ExtractTextPlugin("style/styles.css"),
+    new webpack.DefinePlugin({
+      "process.env": {
+        NODE_ENV: JSON.stringify("production")
+      }
+    })
   ]
 };

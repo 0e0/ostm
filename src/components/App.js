@@ -35,7 +35,7 @@ export default class App extends Component {
               </Menu>
               {this.props.children}
               <div>
-              <img className="logo" src={require("./images/1.png")} />
+              <img className="logo" src={require("./images/logo.png")} />
             <div className="arrow-btn-down">
                 <Link to="/join"><img src={require("./images/arrow-down.png")} /></Link>
                 <Link to="/join"><h4 className="join-btn">join</h4></Link>

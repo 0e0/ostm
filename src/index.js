@@ -13,7 +13,6 @@ import Media from './components/Media';
 
 require('./styles/index.less');
 
-
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App} />
