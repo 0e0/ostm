@@ -1,6 +1,8 @@
 import React from 'react';
 import { RouteTransition } from 'react-router-transition';
-import Ejerson from './Ejerson';
+import Ejerson from './membership/Ejerson';
+import Amanda from './membership/Amanda';
+
 
 export default React.createClass({
 
@@ -19,7 +21,7 @@ export default React.createClass({
             <h1>membership</h1>
             <div className='ambassadors'>
             <Ejerson />
-
+            <Amanda />
             </div>
           </div>
         </RouteTransition>

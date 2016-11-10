@@ -79,6 +79,80 @@
     font-size: 200%;
   }
 }
+.photos {
+  background-color: #FFFFF6;
+  padding: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+  padding: 1%;
+}
+@media screen and (max-width: 575px) {
+  .one,
+  .two,
+  .three,
+  .four,
+  .six,
+  .seven,
+  .eight,
+  .nine {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .five {
+    width: 100%;
+  }
+}
+.ambassadors {
+  padding: 5%;
+  background-color: #FFFFF6;
+}
+.representatives {
+  padding: 5%;
+  background-color: #FFD828;
+}
+.hannah,
+.amanda,
+.eric,
+.frank,
+.alejandra {
+  width: 30%;
+  padding: 5%;
+  border-radius: 10%;
+}
+.ejerson-container {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 65%;
+}
+.ejerson-container .text {
+  color: #333366;
+  font-weight: bolder;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+  text-shadow: 2px;
+}
+.ejerson-container .ejerson-faded {
+  width: 20em;
+  opacity: 0.2;
+  border-radius: 10%;
+  transition: opacity 2s ease;
+}
+.ejerson-container .ejerson {
+  border-radius: 10%;
+  width: 20em;
+}
 /*** Font ***/
 a:link {
   text-decoration: none;

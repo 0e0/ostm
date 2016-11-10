@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Toggle extends Component {
+class Ejerson extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Ejerson: require('./images/membership/ambassadors/Ejerson.jpg'),
+      Ejerson: require('../images/membership/ambassadors/Ejerson.jpg'),
       Faded: 'ejerson',
       Bio: ''
      };
@@ -22,7 +22,7 @@ class Toggle extends Component {
 
   handleMouseLeave() {
     this.setState({
-      Ejerson: require('./images/membership/ambassadors/Ejerson.jpg'),
+      Ejerson: require('../images/membership/ambassadors/Ejerson.jpg'),
       Faded: 'ejerson',
       Bio: ''
     });
@@ -40,7 +40,6 @@ class Toggle extends Component {
           <p
             onMouseOver={this.handleMouseEnter}
           className='text'>{this.state.Bio}</p>
-
         </div>
       </div>
 
@@ -48,4 +47,4 @@ class Toggle extends Component {
   }
 }
 
-export default Toggle;
+export default Ejerson;
