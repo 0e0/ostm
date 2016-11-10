@@ -1,7 +1,10 @@
 import React from 'react';
 import { RouteTransition } from 'react-router-transition';
+import Ejerson from './Ejerson';
 
 export default React.createClass({
+
+
   render() {
     return (
       <div className='text'>
@@ -12,8 +15,13 @@ export default React.createClass({
           atActive={{ translateY: 0 }}
           mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
           >
-          <h1>membership</h1>
-          <img src={require('./images/coming-soon.gif')} />
+          <div className='membership'>
+            <h1>membership</h1>
+            <div className='ambassadors'>
+            <Ejerson />
+
+            </div>
+          </div>
         </RouteTransition>
       </div>
     );
