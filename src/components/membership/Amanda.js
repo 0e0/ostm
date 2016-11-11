@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Ejerson extends Component {
+class Amanda extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Ejerson: require('../images/membership-image/ambassadors/Ejerson.jpg'),
+      Ejerson: require('../images/membership-image/ambassadors/Amanda.jpg'),
       Faded: 'member',
       Bio: ''
      };
@@ -16,7 +16,7 @@ class Ejerson extends Component {
   handleMouseEnter() {
     this.setState({
       Faded: 'member-faded',
-      Bio: 'I really am super excited about making this website! I created OStM in hopes to provide those involved with the chance to make a difference.'
+      Bio: 'Amanda Peñaloza joined OStM after Christmas caroling in a nursing home and seeing the impact it made on the residents. She acts as a coordinator and performer for the group, and encourages anyone looking for a way to make an impact on their community to join.'
     });
   }
 
@@ -29,21 +29,23 @@ class Ejerson extends Component {
 
   render() {
     return (
-      <div className='member-container'>
-        <div className='image'>
+      <div>
+        <div className='amanda-container'>
         <img
           className={this.state.Faded}
           onMouseOver={this.handleMouseEnter}
           onMouseOut={this.handleMouseLeave}
           src={this.state.Ejerson}/>
+          </div>
+          <div className='amanda-text'>
           <p
             onMouseOver={this.handleMouseEnter}
-          className='text'>{this.state.Bio}</p>
-        </div>
+          >{this.state.Bio}</p>
+          </div>
       </div>
 
     );
   }
 }
 
-export default Ejerson;
+export default Amanda;

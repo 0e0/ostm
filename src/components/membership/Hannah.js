@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Ejerson extends Component {
+class Amanda extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Ejerson: require('../images/membership-image/ambassadors/Ejerson.jpg'),
+      Ejerson: require('../images/membership-image/ambassadors/Hannah.jpg'),
       Faded: 'member',
       Bio: ''
      };
@@ -46,4 +46,4 @@ class Ejerson extends Component {
   }
 }
 
-export default Ejerson;
+export default Amanda;

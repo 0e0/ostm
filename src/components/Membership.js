@@ -1,6 +1,7 @@
 import React from 'react';
 import { RouteTransition } from 'react-router-transition';
-import Ejerson from './membership/Ejerson';
+import Amanda from './membership/Amanda';
+
 
 
 
@@ -17,12 +18,11 @@ export default React.createClass({
           atActive={{ translateY: 0 }}
           mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
           >
-          <div className='membership'>
-            <h1>membership</h1>
-            <div className='ambassadors'>
-            <Ejerson />
-            </div>
-          </div>
+          <h1>membership</h1>
+
+            <Amanda />
+
+          
         </RouteTransition>
       </div>
     );
