@@ -2,9 +2,6 @@ import React from 'react';
 import { RouteTransition } from 'react-router-transition';
 import Amanda from './membership/Amanda';
 
-
-
-
 export default React.createClass({
 
 
@@ -19,10 +16,7 @@ export default React.createClass({
           mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
           >
           <h1>membership</h1>
-
-            <Amanda />
-
-
+          <Amanda />
         </RouteTransition>
       </div>
     );
