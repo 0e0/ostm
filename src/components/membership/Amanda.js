@@ -4,7 +4,7 @@ class Amanda extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Ejerson: require('../images/membership-image/ambassadors/Amanda.jpg'),
+      Ejerson: require('../images/membership-image/ambassadors/amanda.jpg'),
       Faded: 'member',
       Bio: ''
      };
