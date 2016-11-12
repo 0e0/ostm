@@ -6,6 +6,11 @@ const webpack = require('webpack');
 //   inject: 'body'
 // });
 
+var definePlugin = new webpack.DefinePlugin({
+  __DEV__: JSON.stringify(JSON.parse(process.env.BUILD_DEV || 'true')),
+  __PRERELEASE__: JSON.stringify(JSON.parse(process.env.BUILD_PRERELEASE || 'false'))
+});
+
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
@@ -35,7 +40,7 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
-            'file?emitFile=false!=[name].[ext]',
+            'file?hash=sha512&digest=hex&name=[hash].[ext]',
             'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ]
     }
@@ -51,11 +56,7 @@ module.exports = {
   plugins: [
     // HTMLWebpackPluginConfig,
     new ExtractTextPlugin("style/styles.css"),
-    new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: JSON.stringify("production")
-      }
-    }),
+    definePlugin,
     new webpack.optimize.UglifyJsPlugin({
     compress: {
         warnings: false

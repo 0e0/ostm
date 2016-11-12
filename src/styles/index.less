@@ -3,6 +3,7 @@
 @import "media.less";
 @import "membership.less";
 @import "membership-queries.less";
+@import "about.less";
 
 @gray: #FFFFF6;
 @blue: #333366;
@@ -12,13 +13,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @rale: Raleway;
 
-.mission {
-  margin-left: 30%;
-  margin-right: 30%;
-  color: white;
-  text-shadow: .1px;
-  font-family: @rale;
-}
+
 
 a:link{
   text-decoration: none;
@@ -67,7 +62,23 @@ html {
   }
 }
 
+.example-enter {
+  opacity: 0.01;
+}
 
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
 
 // phone
 @media screen and (max-width: 500px) {
@@ -101,7 +112,7 @@ html {
 }
 
 @media screen and (max-height: 370px) {
-  .arrow-btn-up, .arrow-btn-down {
+  .arrow-btn-up, .arrow-btn-down, .arrow-btn-right, .arrow-btn-left {
     visibility: hidden;
   }
 }
@@ -126,7 +137,8 @@ html {
 //  phone
 @media screen and (max-width: 500px) {
   .arrow-btn-right {
-    top: 40%;
+    bottom: 10%;
+    top: auto;
   }
 }
 
@@ -164,7 +176,8 @@ html {
 //  phone
 @media screen and (max-width: 500px) {
   .arrow-btn-left {
-    top: 40%;
+    bottom: 10%;
+    top: auto;
   }
 }
 

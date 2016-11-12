@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { stack as Menu } from 'react-burger-menu';
 import Radium from 'radium';
+import { RouteTransition } from 'react-router-transition';
 
 import NavLink from './NavLink';
 let RadiumLink = Radium(Link);
@@ -9,7 +10,16 @@ let RadiumLink = Radium(Link);
 export default class App extends Component {
   render() {
     return (
+      <RouteTransition
+        pathname={this.props.location.pathname}
+        atEnter={{ opacity: 0 }}
+        atLeave={{ opacity: 0 }}
+        atActive={{ opacity: 1 }}
+      >
+        {this.props.children}
+
       <div className="landing">
+
             <div className="arrow-btn-up">
               <Link to="/membership"><h4 className="membership-btn">membership</h4></Link>
               <Link className="arrow" to="/membership"><img src={require('./images/arrow-up.png')} /></Link>
@@ -44,6 +54,7 @@ export default class App extends Component {
               </div>
 
       </div>
+      </RouteTransition>
 
     );
   }
