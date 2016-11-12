@@ -42,7 +42,7 @@ module.exports = {
     ]
   },
   devtool: 'inline-eval-cheap-source-map',
-  watch: true
+  watch: true,
   resolve: {
     extensions: ['', '.js', '.jsx', '.css']
   },
