@@ -9,7 +9,7 @@ let RadiumLink = Radium(Link);
 export default class App extends Component {
   render() {
     return (
-      <div className="header">
+      <div className="landing">
             <div className="arrow-btn-up">
               <Link to="/membership"><h4 className="membership-btn">membership</h4></Link>
               <Link className="arrow" to="/membership"><img src={require('./images/arrow-up.png')} /></Link>
@@ -37,11 +37,6 @@ export default class App extends Component {
               </div>
               <div>
               <img className="logo" src={require("./images/logo.png")} />
-              </div>
-              <div className="mission">
-                <h3>Musicians on a mission to provide a channel for human connection
-                through musical outreach.
-                </h3>
               </div>
               <div className="arrow-btn-down">
                 <Link to="/join"><img src={require("./images/arrow-down.png")} /></Link>

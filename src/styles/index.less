@@ -13,8 +13,6 @@
 @rale: Raleway;
 
 .mission {
-  margin-top: 90%;
-  z-index: 5;
   margin-left: 30%;
   margin-right: 30%;
   color: white;
@@ -34,6 +32,7 @@ html {
     box-sizing: border-box;
 }
 
+// General Styling for Pages
 .text {
   text-align: center;
   color: white;
@@ -49,10 +48,8 @@ html {
   top: 0;
 }
 
-
-//phone
-
-.header {
+// Styling for Landing Page
+.landing {
   text-align: center;
   background-size: cover;
   position: absolute;
@@ -60,17 +57,17 @@ html {
   top: 0;
   right: 0;
   bottom: 0;
+  .logo {
+    width: 25em;
+    height: 25em;
+    background-size: cover;
+    position: absolute;
+      top: 0; bottom:0; left: 0; right:0;
+      margin: auto;
+  }
 }
 
 
-.logo {
-  width: 25em;
-  height: 25em;
-  background-size: cover;
-  position: absolute;
-    top: 0; bottom:0; left: 0; right:0;
-    margin: auto;
-}
 
 // phone
 @media screen and (max-width: 500px) {
@@ -129,7 +126,7 @@ html {
 //  phone
 @media screen and (max-width: 500px) {
   .arrow-btn-right {
-    visibility: hidden;
+    top: 40%;
   }
 }
 
@@ -167,7 +164,7 @@ html {
 //  phone
 @media screen and (max-width: 500px) {
   .arrow-btn-left {
-    visibility: hidden;
+    top: 40%;
   }
 }
 
