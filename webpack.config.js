@@ -41,7 +41,6 @@ module.exports = {
     }
     ]
   },
-  watch: true,
   resolve: {
     extensions: ['', '.js', '.jsx', '.css']
   },
@@ -61,7 +60,6 @@ module.exports = {
     compress: {
         warnings: false
     }
-  }),
-  new webpack.optimize.DedupePlugin()
+  })
   ]
 };
