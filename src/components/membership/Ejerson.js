@@ -4,7 +4,7 @@ class Ejerson extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Ejerson: require('../images/membership-image/ambassadors/Ejerson.jpg'),
+      Ejerson: require('../images/membership-image/ambassadors/ejerson.jpg'),
       Faded: 'member',
       Bio: ''
      };
@@ -29,18 +29,18 @@ class Ejerson extends Component {
 
   render() {
     return (
-      <div>
-        <div className='ejerson-container'>
+      <div className='amanda-container'>
         <img
           className={this.state.Faded}
           onMouseOver={this.handleMouseEnter}
           onMouseOut={this.handleMouseLeave}
           src={this.state.Ejerson}/>
-          </div>
-          <div className='ejerson-text'>
-          <p
-            onMouseOver={this.handleMouseEnter}
-          >{this.state.Bio}</p>
+          <div
+          className='amanda-text'
+          onMouseOver={this.handleMouseEnter}
+          onMouseOut={this.handleMouseLeave}
+          >
+          <p>{this.state.Bio}</p>
           </div>
       </div>
 

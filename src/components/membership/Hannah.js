@@ -4,7 +4,7 @@ class Amanda extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Ejerson: require('../images/membership-image/ambassadors/Hannah.jpg'),
+      Ejerson: require('../images/membership-image/ambassadors/hannah.jpg'),
       Faded: 'member',
       Bio: ''
      };
@@ -16,7 +16,7 @@ class Amanda extends Component {
   handleMouseEnter() {
     this.setState({
       Faded: 'member-faded',
-      Bio: 'I really am super excited about making this website! I created OStM in hopes to provide those involved with the chance to make a difference.'
+      Bio: 'Hannah Hopper, coordinator and performer in OStM, joined the organization partly in memory of her late great-grandparents, who passed away from Alzheimer’s and who greatly enjoyed having someone come sing to them. She believes people with a love for making others smile will find a great place in OStM.'
     });
   }
 
@@ -29,17 +29,19 @@ class Amanda extends Component {
 
   render() {
     return (
-      <div className='member-container'>
-        <div className='image'>
+      <div className='amanda-container'>
         <img
           className={this.state.Faded}
           onMouseOver={this.handleMouseEnter}
           onMouseOut={this.handleMouseLeave}
           src={this.state.Ejerson}/>
-          <p
-            onMouseOver={this.handleMouseEnter}
-          className='text'>{this.state.Bio}</p>
-        </div>
+          <div
+          className='amanda-text'
+          onMouseOver={this.handleMouseEnter}
+          onMouseOut={this.handleMouseLeave}
+          >
+          <p>{this.state.Bio}</p>
+          </div>
       </div>
 
     );

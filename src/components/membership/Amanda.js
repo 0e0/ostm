@@ -38,8 +38,10 @@ class Amanda extends Component {
           src={this.state.Ejerson}/>
           <div
           className='amanda-text'
-          onMouseOver={this.handleMouseEnter}>
-            <p>{this.state.Bio}</p>
+          onMouseOver={this.handleMouseEnter}
+          onMouseOut={this.handleMouseLeave}
+          >  
+          <p>{this.state.Bio}</p>
           </div>
       </div>
 
