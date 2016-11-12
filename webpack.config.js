@@ -12,7 +12,7 @@ var definePlugin = new webpack.DefinePlugin({
 });
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
+require('events').EventEmitter.prototype._maxListeners = 100;
 
 module.exports = {
   entry: [
