@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouteTransition } from 'react-router-transition';
 import Amanda from './membership/Amanda';
-import Ejerson from './membership/Ejerson';
+
 
 
 
