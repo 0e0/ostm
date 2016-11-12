@@ -12,6 +12,8 @@ var definePlugin = new webpack.DefinePlugin({
 });
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+// Prevent EventEmitter leak warning
 require('events').EventEmitter.prototype._maxListeners = 100;
 
 module.exports = {
