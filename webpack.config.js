@@ -49,7 +49,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.css']
+    extensions: ['', '.js', '.jsx']
   },
   devServer: {
     historyApiFallback: true,
@@ -59,6 +59,7 @@ module.exports = {
     // HTMLWebpackPluginConfig,
     new ExtractTextPlugin("style/styles.css"),
     definePlugin,
+    new webpack.optimize.LimitChunkCountPlugin({maxChunks: 15}),
     new webpack.optimize.UglifyJsPlugin({
     compress: {
         warnings: false
