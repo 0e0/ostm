@@ -11,6 +11,7 @@ class Amanda extends Component {
 
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
+
   }
 
   handleMouseEnter() {
@@ -29,18 +30,16 @@ class Amanda extends Component {
 
   render() {
     return (
-      <div>
-        <div className='amanda-container'>
+      <div className='amanda-container'>
         <img
           className={this.state.Faded}
           onMouseOver={this.handleMouseEnter}
           onMouseOut={this.handleMouseLeave}
           src={this.state.Ejerson}/>
-          </div>
-          <div className='amanda-text'>
-          <p
-            onMouseOver={this.handleMouseEnter}
-          >{this.state.Bio}</p>
+          <div
+          className='amanda-text'
+          onMouseOver={this.handleMouseEnter}>
+            <p>{this.state.Bio}</p>
           </div>
       </div>
 

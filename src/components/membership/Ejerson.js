@@ -29,17 +29,19 @@ class Ejerson extends Component {
 
   render() {
     return (
-      <div className='member-container'>
-        <div className='image'>
+      <div>
+        <div className='ejerson-container'>
         <img
           className={this.state.Faded}
           onMouseOver={this.handleMouseEnter}
           onMouseOut={this.handleMouseLeave}
           src={this.state.Ejerson}/>
+          </div>
+          <div className='ejerson-text'>
           <p
             onMouseOver={this.handleMouseEnter}
-          className='text'>{this.state.Bio}</p>
-        </div>
+          >{this.state.Bio}</p>
+          </div>
       </div>
 
     );
