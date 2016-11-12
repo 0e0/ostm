@@ -34,20 +34,20 @@ export default class App extends Component {
                 <RadiumLink className="bm-item-list" to="/resources">Resources</RadiumLink>
               </Menu>
               {this.props.children}
+              </div>
               <div>
               <img className="logo" src={require("./images/logo.png")} />
+              </div>
               <div className="mission">
                 <h3>Musicians on a mission to provide a channel for human connection
                 through musical outreach.
                 </h3>
               </div>
-              </div>
-            <div className="arrow-btn-down">
+              <div className="arrow-btn-down">
                 <Link to="/join"><img src={require("./images/arrow-down.png")} /></Link>
                 <Link to="/join"><h4 className="join-btn">join</h4></Link>
-            </div>
-          
-        </div>
+              </div>
+
       </div>
 
     );
