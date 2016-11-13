@@ -19,19 +19,19 @@ export default React.createClass({
           <Bio
             className='amanda member-container'
             name='Amanda'
-            image={require('./images/ambassadors/amanda.jpg')}
+            image={require('./ambassadors/amanda.jpg')}
             bio={'Amanda Peñaloza joined OStM after Christmas caroling in a nursing home and seeing the impact it made on the residents. She acts as a coordinator and performer for the group, and encourages anyone looking for a way to make an impact on their community to join.'}
             />
           <Bio
             className='ejerson member-container'
             name='Ejerson'
-            image={require('./images/ambassadors/ejerson.jpg')}
+            image={require('./ambassadors/ejerson.jpg')}
             bio={'I really am super excited about making this website! I created OStM in hopes to provide those involved with the chance to make a difference.'}
           />
           <Bio
             className='hannah member-container'
             name='Hannah'
-            image={require('./images/ambassadors/hannah.jpg')}
+            image={require('./ambassadors/hannah.jpg')}
             bio={'Hannah Hopper, coordinator and performer in OStM, joined the organization partly in memory of her late great-grandparents, who passed away from Alzheimer’s and who greatly enjoyed having someone come sing to them. She believes people with a love for making others smile will find a great place in OStM.'}
           />
       </div>
