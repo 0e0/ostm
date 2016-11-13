@@ -1,3 +1,36 @@
+// Styling for individual div containers of pictures
+.amanda, .ejerson, .hannah {
+  .member-container;
+}
+
+// .amanda {
+//   float: left;
+// }
+//
+// .ejerson {
+//   text-align: center;
+//   margin: auto;
+// }
+//
+// .hannah {
+//   float: right;
+// }
+
+.member-container {
+  // text-align: center;
+  // margin-left: 6%;
+  // margin-right: 65%;
+  padding: 1% 5% 0 0;
+  .member-text {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    text-shadow: 2px;
+  }
+}
+
 
 // Image Fading
 .member-faded {
@@ -10,12 +43,15 @@
   width: 90%;
   }
 
+// Original Photo
 .member {
     border-radius: 100%;
     width: 90%;
     border: 10px;
     border-width: 15px;
   }
+
+// After picture has been chosen (hovered over)
 .member-picked {
   width: 90%;
   opacity: 0.2;
@@ -26,21 +62,3 @@
   border-color: @blue;
 
   }
-
-// Styling for individual div containers of pictures
-.member-container {
-  // background-color: @gray;
-  text-align: center;
-  margin-left: 6%;
-  margin-right: 65%;
-  padding: 1% 5% 0 0;
-}
-
-.member-text {
-  color: white;
-  font-weight: bolder;
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  text-shadow: 2px;
-}

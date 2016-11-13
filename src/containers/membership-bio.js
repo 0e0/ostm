@@ -4,6 +4,7 @@ class Bio extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      className: this.props.className,
       Name: this.props.name,
       Image: this.props.image,
       Faded: 'member',
@@ -31,7 +32,7 @@ class Bio extends Component {
 
   render() {
     return (
-      <div className='member-container'>
+      <div className={this.props.className}>
         <img
           className={this.state.Faded}
           onMouseOver={this.handleMouseEnter}
