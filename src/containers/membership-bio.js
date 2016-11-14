@@ -4,6 +4,7 @@ class Bio extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      textClass: this.props.textClass,
       className: this.props.className,
       Name: this.props.name,
       Image: this.props.image,
@@ -39,7 +40,7 @@ class Bio extends Component {
           onMouseOut={this.handleMouseLeave}
           src={this.state.Image}/>
           <div
-          className='member-text'
+          className={this.props.textClass}
           onMouseOver={this.handleMouseEnter}
           onMouseOut={this.handleMouseLeave}
           >
