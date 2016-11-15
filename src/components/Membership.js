@@ -15,7 +15,7 @@ export default React.createClass({
         mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
         >
       <div className='text text-membership'>
-          <h1>membership</h1>
+          <h1 className='membership-header'>membership</h1>
           <Bio
             className='amanda member-container'
             textClass='amanda-text member-text'
