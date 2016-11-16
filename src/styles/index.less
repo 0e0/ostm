@@ -8,11 +8,10 @@
 @gray: #FFFFF6;
 @blue: #333366;
 @yellow: #FFD828;
+@lightgray: #868789;
 
 /*** Font ***/
 @rale: Raleway;
-
-
 
 a:link{
   text-decoration: none;
@@ -54,35 +53,60 @@ html {
 }
 
 .mission {
-  min-width: 300px;
-  max-width: 500px;
-  min-height: 300px;
-  max-height: 500px;
-  background-color: pink;
+  min-width: 250px;
+  max-width: 450px;
+  min-height: 250px;
+  max-height: 400px;
   position: absolute;
   top: 0; bottom:0; left: 0; right:0;
   margin: auto;
+  background-image: url('../components/images/logo.png');
+  background-size: cover;
 }
 
+@media screen and (max-width: 320px) {
+  .mission {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mission {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+.event-btn {
+  border-style: solid;
+  border-color: @lightgray;
+  padding: 7px;
+  cursor: pointer;
+  font-size: 15px;
+  position: absolute;
+  right: 30%;
+}
+.event-btn:hover {
+  padding: 10px;
+  font: 20px;
+}
 .mission-btn {
   border-style: solid;
-  border-color: @yellow;
-  padding: 3px;
-}
-
-.events-btn {
-  .mission-btn
-}
-
-.logo {
-  min-width: 300px;
-  max-widht: 500px;
-  min-height: 300px;
-  max-height: 500px;
+  border-color: @lightgray;
+  padding: 7px;
+  cursor: pointer;
+  font-size: 15px;
   position: absolute;
-    top: 0; bottom:0; left: 0; right:0;
-    margin: auto;
+  left: 30%;
 }
+
+.mission-btn:hover {
+  padding: 10px;
+  font: 20px;
+}
+
+
 
 // phone
 @media screen and (max-width: 500px) {

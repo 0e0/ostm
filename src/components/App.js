@@ -6,6 +6,7 @@ import { RouteTransition } from 'react-router-transition';
 
 import NavLink from './NavLink';
 let RadiumLink = Radium(Link);
+import Logo from '../containers/logo';
 
 export default class App extends Component {
   render() {
@@ -45,12 +46,7 @@ export default class App extends Component {
               </Menu>
               {this.props.children}
               </div>
-              <div className="mission">
-              <h6 className='mission-btn'>Mission</h6>
-              <h6 className="events-btn">Events</h6>
-              <img className="logo" src={require("./images/logo.png")} />
-
-              </div>
+              <Logo />
               <div className="arrow-btn-down">
                 <Link to="/join"><img src={require("./images/arrow-down.png")} /></Link>
                 <Link to="/join"><h4 className="join-btn">join</h4></Link>
