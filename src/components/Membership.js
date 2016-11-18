@@ -15,7 +15,7 @@ export default React.createClass({
         mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
         >
       <div className='text text-membership'>
-          <h1 className='membership-header'>membership</h1>
+          <h1 className='membership-header'>team</h1>
           <Bio
             className='amanda member-container'
             textClass='amanda-text member-text'
@@ -23,6 +23,13 @@ export default React.createClass({
             image={require('./ambassadors/amanda.jpg')}
             bio={'Amanda Peñaloza joined OStM after Christmas caroling in a nursing home and seeing the impact it made on the residents. She acts as a coordinator and performer for the group, and encourages anyone looking for a way to make an impact on their community to join.'}
             />
+            <Bio
+              className='barb member-container'
+              textClass='barb-text member-text'
+              name='Barb'
+              image={require('./ambassadors/barb.jpg')}
+              bio={"I accompany for OStM, and love to share in bringing the joy of music to the elderly. I have participated since the group's beginnings, and would encourage any and all students and community members to experience the unique ways in which this outreach touches lives."}
+              />
             <Bio
               className='darice member-container'
               textClass='darice-text member-text'
@@ -51,6 +58,13 @@ export default React.createClass({
             image={require('./ambassadors/Pat.jpg')}
             bio={"Hi my name is Pat and I am an accompanist for OStM."}
             />
+            <Bio
+              className='trystan member-container'
+              textClass='trystan-text member-text'
+              name='Trystan'
+              image={require('./ambassadors/trystan.jpg')}
+              bio={"My name is Trystan Harpold and i am a Performer and Blitz Coordinator for OStM. I first joined OStM because i wanted more opportunities to perform for a crowd that would appreciate my playing without judgment. You should join OStM because it is a great way to give back to the community and it means the world the residents we perform for."}
+              />
 
       </div>
       </RouteTransition>

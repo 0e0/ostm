@@ -22,7 +22,7 @@ export default class App extends Component {
       <div className="landing">
 
             <div className="arrow-btn-up">
-              <Link to="/membership"><h4 className="membership-btn">membership</h4></Link>
+              <Link to="/membership"><h4 className="membership-btn">team</h4></Link>
               <Link className="arrow" to="/membership"><img src={require('./images/arrow-up.png')} /></Link>
             </div>
             <div className="arrow-btn-right">
@@ -51,7 +51,7 @@ export default class App extends Component {
               />
               <div className="arrow-btn-down">
                 <Link to="/join"><img src={require("./images/arrow-down.png")} /></Link>
-                <Link to="/join"><h4 className="join-btn">join | events</h4></Link>
+                <Link to="/join"><h4 className="join-btn">join</h4></Link>
               </div>
 
       </div>
