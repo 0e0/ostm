@@ -1,5 +1,7 @@
 import React from 'react';
 import { RouteTransition } from 'react-router-transition';
+import { Link } from 'react-router';
+
 import Bio from '../containers/membership-bio';
 
 export default React.createClass({
@@ -15,7 +17,10 @@ export default React.createClass({
         mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
         >
       <div className='text text-membership'>
-          <h1 className='membership-header'>team</h1>
+          <div className='team-header'>
+          <h1>team</h1>
+          <Link to="/"><img className="home-button" src={require('./images/home-button.png')} /></Link>
+          </div>
           <Bio
             className='amanda member-container'
             textClass='amanda-text member-text'

@@ -1,5 +1,6 @@
 import React from 'react';
 import { RouteTransition } from 'react-router-transition';
+import { Link } from 'react-router';
 
 import ReasonforBeing from './blogs/11-8-16';
 
@@ -15,6 +16,10 @@ export default React.createClass({
           mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
           >
           <div>
+            <div>
+            <h1>blog</h1>
+            <Link to="/"><img src={require('./images/home-button.png')} /></Link>
+            </div>
             <ReasonforBeing />
           </div>
         </RouteTransition>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { RouteTransition } from 'react-router-transition';
+import { Link } from 'react-router';
 
 export default React.createClass({
   render() {
@@ -15,6 +16,7 @@ export default React.createClass({
           >
             <div>
               <h1>media</h1>
+              <Link to="/"><img src={require('./images/home-button.png')} /></Link>
             <div className='photos'>
               <img className='one' src={require('./images/media/1.jpg')} />
               <img className='two' src={require('./images/media/2.jpg')} />

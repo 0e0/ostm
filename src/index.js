@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
 
 import App from './components/App';
-import About from './components/About';
+import Credits from './components/Credits';
 import Join from './components/Join';
 import Events from './components/Events';
 import Resources from './components/Resources';
-import Membership from './components/Membership';
+import Team from './components/Team';
 import Blog from './components/Blog';
 import Media from './components/Media';
 
@@ -17,9 +17,9 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App} />
     <Route path="/join" component={Join} />
-    <Route path="/about" component={About} />
+    <Route path="/credits" component={Credits} />
     <Route path="/events" component={Events} />
-    <Route path="/membership" component={Membership} />
+    <Route path="/team" component={Team} />
     <Route path="/resources" component={Resources} />
     <Route path="/blog" component={Blog} />
     <Route path="/media" component={Media} />

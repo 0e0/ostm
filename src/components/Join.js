@@ -1,5 +1,6 @@
 import React from 'react';
 import { RouteTransition } from 'react-router-transition';
+import { Link } from 'react-router';
 
 export default React.createClass({
   render() {
@@ -12,8 +13,12 @@ export default React.createClass({
           atActive={{ translateY: 0 }}
           mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
           >
-          <div className="facebook">
-          <h1><a href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
+          <div>
+          <div>
+          <h1>join</h1>
+          <Link to="/"><img src={require('./images/home-button.png')} /></Link>
+          </div>
+          <h1 className='facebook'><a href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
           </div>
           <div>
           <h1>operationspreadthemusic@gmail.com</h1>
