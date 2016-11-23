@@ -17,6 +17,7 @@
   "author": "Ejerson Balabas",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-preset-stage-1": "^6.1.18",
     "css-loader": "^0.25.0",
