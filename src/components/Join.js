@@ -23,9 +23,9 @@ export default React.createClass({
                 <h4>Anyone can join! Come to our open rehearsals that are held every week.</h4>
               <h2>WHERE are the rehearsals?</h2>
                 <h4>Good Samaritan 3025 Terrace Dr, Las Cruces, NM 88011</h4>
-                <h4>We will be at the Creative Arts Room</h4>
+                <h4>We will be in the Creative Arts Room</h4>
               <h2>WHEN does it start?</h2>
-                <h4>Every Tuesday from 5:45 PM to 8:00 PM, but you can stop by at anytime during the rehearsal.</h4>
+                <h4>Every Tuesday from 5:45 PM to 7:00 PM, but you can stop by at anytime during the rehearsal.</h4>
 
             </div>
           </div>

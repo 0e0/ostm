@@ -8,7 +8,7 @@ export default React.createClass({
       <div className='text'>
       <h1>events</h1>
       <Link to="/"><img src={require('./images/home-button.png')} /></Link>
-      <h2>Rehearsals are held every Tuesday from 5:45 pm to 8:00 pm in Good Samaritan Creative Arts Room</h2>
+      <h2>Rehearsals are held every Tuesday from 5:45 pm to 6:45 pm in Good Samaritan Creative Arts Room</h2>
         <div>
           <Square
             className="event"
