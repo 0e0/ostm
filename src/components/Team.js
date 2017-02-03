@@ -47,7 +47,7 @@ export default React.createClass({
             textClass='ejerson-text member-text'
             name='Ejerson'
             image={require('./ambassadors/ejerson.jpg')}
-            bio={'I devote myself to OStM in hopes to provide those involved with the chance to make a difference. I hope to help make this group into something that is important to the community. Anyone who hopes to make our world a little better should join.'}
+            bio={'Hi my name is Ejerson Balabas and I coordinate the OStM logistical team. I devote myself to OStM in hopes to provide those involved with the chance to make a difference. I work to help make this group into something that is important to the community. Anyone who dreams to make our world a little better should join.'}
           />
           <Bio
             className='hannah member-container'

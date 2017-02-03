@@ -26,7 +26,6 @@ export default React.createClass({
                 <h4>We will be in the Creative Arts Room</h4>
               <h2>WHEN does it start?</h2>
                 <h4>Every Tuesday from 5:45 PM to 7:00 PM, but you can stop by at anytime during the rehearsal.</h4>
-
             </div>
           </div>
           <div>
