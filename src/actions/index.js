@@ -39,7 +39,7 @@ export function fetchMar4() {
 }
 
 export function fetchMar11() {
-  const request = axios.get(`${ROOT_URL}/performer?q={'content': {$eq: 'Mar11'}}&${API_KEY}`);
+  const request = axios.get(`${ROOT_URL}/performer?q={'date': {$eq: 'Mar11'}}&${API_KEY}`);
 
   return {
     type: FETCH_POSTS,
@@ -48,7 +48,7 @@ export function fetchMar11() {
 }
 
 export function fetchPosts() {
-  const request = axios.get(`${ROOT_URL}/performer?q={'content': {$eq: 'Feb4'}}&${API_KEY}`);
+  const request = axios.get(`${ROOT_URL}/performer?q={'date': {$eq: 'Feb4'}}&${API_KEY}`);
 
   return {
     type: FETCH_POSTS,
