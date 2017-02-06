@@ -21,7 +21,7 @@ export default class Events extends Component {
             </Link>
           <div className="blitz-rehearsals">
 
-          <h3>Rehearsals are held every Tuesday from 5:45 pm to 6:45 pm in Good Samaritan Creative Arts Room</h3>
+          <h3 className="rehearsal-time">Rehearsals are held every Tuesday from 5:45 pm to 6:30 pm in Good Samaritan Creative Arts Room</h3>
           <div className="west">
             <h2>W = West Blitz</h2>
             <table>
