@@ -17,7 +17,7 @@ export default class Events extends Component {
           <h1>events</h1>
           <Link to="/"><img src={require('./images/home-button.png')} /></Link>
           <h2>Rehearsals are held every Tuesday from 5:45 pm to 6:45 pm in Good Samaritan Creative Arts Room</h2>
-          <Link to="/posts/new">
+          <Link to="/signup">
             <h1 className="signup">Performance Sign-up</h1>
             </Link>
         </div>

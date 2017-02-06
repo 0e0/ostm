@@ -14,7 +14,7 @@ import Events from './components/Events';
 import Team from './components/Team';
 import Blog from './components/Blog';
 import Media from './components/Media';
-import PostsNew from './components/posts_new';
+import Signup from './components/sign-up';
 import PostsShow from './components/posts_show';
 import Resources from './components/Resources';
 
@@ -36,7 +36,7 @@ ReactDOM.render((
     <Route path="/resources" component={Resources} />
     <Route path="/blog" component={Blog} />
     <Route path="/media" component={Media} />
-    <Route path="/posts/new" component={PostsNew} />
+    <Route path="/signup" component={Signup} />
     <Route path="/posts/:id" component={PostsShow} />
 
   </Router>

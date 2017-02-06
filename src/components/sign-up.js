@@ -3,7 +3,7 @@ import { reduxForm } from 'redux-form';
 import { createPost } from '../actions/index';
 import { Link } from 'react-router';
 
-class PostsNew extends Component {
+class Signup extends Component {
   static contextTypes = {
     router: PropTypes.object
   };
@@ -20,10 +20,12 @@ class PostsNew extends Component {
     const { fields: { name, piece, duration, date }, handleSubmit } = this.props;
 
     return (
-      <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-        <h3>Performance Sign-up</h3>
+      <div className="whole-form-page">
+      <h1>Performance Sign-up</h1>
+      <form className='form' onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+
         <div className={`form-group ${name.touched && name.invalid ? 'has-danger' : ''}`}>
-          <label>Full Name</label>
+          <label>Full Name </label>
           <input type="text" className="form-control" {...name}/>
           <div className="text-help form-control-label">
             {name.touched ? name.error : ''}
@@ -31,7 +33,7 @@ class PostsNew extends Component {
         </div>
 
         <div className={`form-group ${piece.touched && piece.invalid ? 'has-danger' : ''}`}>
-          <label>Piece</label>
+          <label>Piece </label>
           <input type="text" className="form-control" {...piece}/>
           <div className="text-help form-control-label">
             {piece.touched ? piece.error : ''}
@@ -39,7 +41,7 @@ class PostsNew extends Component {
         </div>
 
         <div className={`form-group ${duration.touched && duration.invalid ? 'has-danger' : ''}`}>
-          <label>Duration</label>
+          <label>Duration </label>
           <input type="text" className="form-control" {...duration}/>
           <div className="text-help form-control-label">
             {duration.touched ? duration.error : ''}
@@ -47,8 +49,8 @@ class PostsNew extends Component {
         </div>
 
         <div className={`form-group ${date.touched && date.invalid ? 'has-danger' : ''}`}>
-          <label>Date</label>
-          <select className="form-control" {...date}>
+          <label>Date </label>
+          <select className="date-select" {...date}>
             <option />
             <option>Feb4</option>
             <option>Feb11</option>
@@ -60,10 +62,11 @@ class PostsNew extends Component {
           </div>
         </div>
 
-        <button type="submit" className="btn btn-primary">Submit</button>
-        <Link to="/" className="btn btn-danger">Cancel</Link>
+        <button type="submit" className="submit-btn"><h2>Submit</h2></button>
+        <button className="cancel-btn"><Link to="/events"><h2>Cancel</h2></Link></button>
 
       </form>
+      </div>
     );
   }
 }
@@ -94,4 +97,4 @@ export default reduxForm({
   form: 'PostsNewForm',
   fields: ['name', 'piece', 'duration', 'date'],
   validate
-}, null, { createPost })(PostsNew);
+}, null, { createPost })(Signup);
