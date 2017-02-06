@@ -16,7 +16,68 @@ export default class Events extends Component {
         <div>
           <h1>events</h1>
           <Link to="/"><img src={require('./images/home-button.png')} /></Link>
-          <h2>Rehearsals are held every Tuesday from 5:45 pm to 6:45 pm in Good Samaritan Creative Arts Room</h2>
+          <div className="blitz-rehearsals">
+          <h3>Rehearsals are held every Tuesday from 5:45 pm to 6:45 pm in Good Samaritan Creative Arts Room</h3>
+          <div className="west">
+            <h2>W = West Blitz</h2>
+            <table>
+              <tr>
+              <th>Time</th>
+              <th>Location</th>
+              </tr>
+              <tr>
+                <td>9:45 AM</td>
+                <td>Arbors del Rey</td>
+              </tr>
+              <tr>
+                <td>10:30 AM</td>
+                <td>Casa Bella</td>
+              </tr>
+              <tr>
+                <td>11:30 AM</td>
+                <td>Mesilla Valley Hospice</td>
+              </tr>
+              <tr>
+                <td>12:00 PM</td>
+                <td>Lunch (TBA)</td>
+              </tr>
+              <tr>
+                <td>1:00 PM</td>
+                <td>Casa Del Sol</td>
+              </tr>
+            </table>
+          </div>
+          <div className="east">
+            <h2>E = East Blitz</h2>
+            <table>
+              <tr>
+              <th>Time</th>
+              <th>Location</th>
+              </tr>
+              <tr>
+                <td>11:00 AM</td>
+                <td>Sagecrest</td>
+              </tr>
+              <tr>
+                <td>12:00 PM</td>
+                <td>Golden Mesa</td>
+              </tr>
+              <tr>
+                <td>12:30 PM</td>
+                <td>Lunch (TBA)</td>
+              </tr>
+              <tr>
+                <td>1:30 PM</td>
+                <td>Aristocrat</td>
+              </tr>
+              <tr>
+                <td>2:30 PM</td>
+                <td>Good Samaritan</td>
+              </tr>
+            </table>
+          </div>
+
+          </div>
           <Link to="/signup">
             <h1 className="signup">Performance Sign-up</h1>
             </Link>
@@ -27,12 +88,12 @@ export default class Events extends Component {
         selectedIndex={0}
         className='event-tabs'
         >
-
+        <h1>Performers List</h1>
         <TabList>
-          <Tab>2 | 4</Tab>
-          <Tab>2 | 11</Tab>
-          <Tab>3 | 4</Tab>
-          <Tab>3 | 11</Tab>
+          <Tab>W | 2.4</Tab>
+          <Tab>E | 2.11</Tab>
+          <Tab>W | 3.4</Tab>
+          <Tab>E | 3.11</Tab>
         </TabList>
           <TabPanel>
             <div><Feb4 /></div>
