@@ -14,8 +14,8 @@ class Feb4 extends Component {
       return (
         <li key={post._id.$oid}>
           <Link to={"/posts/" + post._id.$oid}>
-          <strong>{post.name}</strong>
-          <span>{post.piece}</span>
+          <strong>{post.name} |</strong>
+          <span> {post.piece}</span>
           </Link>
         </li>
       );

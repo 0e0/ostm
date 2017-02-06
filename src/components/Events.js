@@ -16,7 +16,11 @@ export default class Events extends Component {
         <div>
           <h1>events</h1>
           <Link to="/"><img src={require('./images/home-button.png')} /></Link>
+          <Link to="/signup">
+            <h1 className="signup">Performance Sign-up</h1>
+            </Link>
           <div className="blitz-rehearsals">
+
           <h3>Rehearsals are held every Tuesday from 5:45 pm to 6:45 pm in Good Samaritan Creative Arts Room</h3>
           <div className="west">
             <h2>W = West Blitz</h2>
@@ -78,17 +82,16 @@ export default class Events extends Component {
           </div>
 
           </div>
-          <Link to="/signup">
-            <h1 className="signup">Performance Sign-up</h1>
-            </Link>
+
         </div>
         <div>
+        <h1 className="list">performers list</h1>
         <Tabs
         onSelect={this.handleSelect}
         selectedIndex={0}
         className='event-tabs'
         >
-        <h1>Performers List</h1>
+
         <TabList>
           <Tab>W | 2.4</Tab>
           <Tab>E | 2.11</Tab>
