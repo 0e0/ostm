@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { RouteTransition } from 'react-router-transition';
 
 import Feb4 from './Feb4';
 import Feb11 from './Feb11';
@@ -13,6 +14,13 @@ export default class Events extends Component {
   render() {
     return (
       <div className='text'>
+      <RouteTransition
+        pathname={this.props.location.pathname}
+        atEnter={{ translateX: -100 }}
+        atLeave={{ translateX: 100 }}
+        atActive={{ translateX: 0 }}
+        mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
+        >
         <div>
           <h1>events</h1>
           <Link to="/"><img src={require('./images/home-button.png')} /></Link>
@@ -113,6 +121,7 @@ export default class Events extends Component {
       </Tabs>
 
       </div>
+      </RouteTransition>
       </div>
     );
   }

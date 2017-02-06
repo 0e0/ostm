@@ -1,5 +1,4 @@
 import React from 'react';
-import { RouteTransition } from 'react-router-transition';
 import { Link } from 'react-router';
 
 export default React.createClass({
@@ -7,13 +6,7 @@ export default React.createClass({
 
     return (
       <div className='text'>
-        <RouteTransition
-          pathname={this.props.location.pathname}
-          atEnter={{ translateX: -100 }}
-          atLeave={{ translateX: 100 }}
-          atActive={{ translateX: 0 }}
-          mapStyles={styles => ({ transform: `translateX(${styles.translateX}%)` })}
-          >
+
             <div>
               <h1>media</h1>
               <Link to="/"><img src={require('./images/home-button.png')} /></Link>
@@ -29,7 +22,7 @@ export default React.createClass({
               <img className='nine' src={require('./images/media/9.jpg')} />
           </div>
           </div>
-          </RouteTransition>
+
         </div>
     );
   }

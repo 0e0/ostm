@@ -29,8 +29,8 @@ export default class App extends Component {
                 <Link to="/blog"><h4 className="blog-btn">blog</h4></Link>
             </div>
             <div className="arrow-btn-left">
-                <Link to="/media"><img src={require("./images/arrow-left.png")} /></Link>
-                <Link to="/media"><h4 className="media-btn">media</h4></Link>
+                <Link to="/events"><img src={require("./images/arrow-left.png")} /></Link>
+                <Link to="/events"><h4 className="media-btn">events</h4></Link>
             </div>
             <div id="outer-container">
               <Menu left width={ 280 } outerContainerId={ "outer-container" }>
