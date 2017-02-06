@@ -6,10 +6,10 @@ const webpack = require('webpack');
 //   inject: 'body'
 // });
 
-var definePlugin = new webpack.DefinePlugin({
-  __DEV__: JSON.stringify(JSON.parse(process.env.BUILD_DEV || 'true')),
-  __PRERELEASE__: JSON.stringify(JSON.parse(process.env.BUILD_PRERELEASE || 'false'))
-});
+// var definePlugin = new webpack.DefinePlugin({
+//   __DEV__: JSON.stringify(JSON.parse(process.env.BUILD_DEV || 'true')),
+//   __PRERELEASE__: JSON.stringify(JSON.parse(process.env.BUILD_PRERELEASE || 'false'))
+// });
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
@@ -58,7 +58,12 @@ module.exports = {
   plugins: [
     // HTMLWebpackPluginConfig,
     new ExtractTextPlugin("style/styles.css"),
-    definePlugin,
+    // definePlugin,
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+        }
+      }),
     new webpack.optimize.LimitChunkCountPlugin({maxChunks: 15}),
     new webpack.optimize.UglifyJsPlugin({
     compress: {
