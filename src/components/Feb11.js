@@ -26,8 +26,10 @@ class Feb11 extends Component {
     return (
       <div>
         <ol>
-          {this.renderFeb11()}
+          <h3>{this.renderFeb11()}</h3>
         </ol>
+        <hr/>
+        <h3 className="rehearsal-date">Rehearsal Dates | 1-31 & 2-7</h3>
       </div>
     );
   }

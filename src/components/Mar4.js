@@ -28,6 +28,8 @@ class Mar4 extends Component {
         <ol>
           <h3>{this.renderMar4()}</h3>
         </ol>
+        <hr/>
+        <h3 className="rehearsal-date">Rehearsal Dates | 2-21 & 2-28</h3>
       </div>
     );
   }
