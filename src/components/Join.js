@@ -39,12 +39,16 @@ export default React.createClass({
               <h2>WHERE do I get more information about a specific blitz or rehearsal?</h2>
                 <h4>More information can be found in our <span><Link to="/events" className='events-page'>events
                   </Link></span> page.</h4>
+
             </div>
 
           </div>
             <div>
-            <h2 className="more-info">For more questions, feel free to email us at <span><h4>operationspreadthemusic@gmail.com</h4></span></h2>
-            <h1 className='facebook'><a href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
+
+            <h1 className='facebook'><a className='facebook-link' href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
+          </div>
+          <div className="more-info">
+          <h3>For more questions, feel free to email us at operationspreadthemusic@gmail.com</h3>
           </div>
         </RouteTransition>
       </div>
