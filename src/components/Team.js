@@ -57,6 +57,13 @@ export default React.createClass({
             bio={'Hannah Hopper, coordinator and performer in OStM, joined the organization partly in memory of her late great-grandparents, who passed away from Alzheimer’s and who greatly enjoyed having someone come sing to them. She believes people with a love for making others smile will find a great place in OStM.'}
           />
           <Bio
+            className='heather member-container'
+            textClass='heather-text member-text'
+            name='Heather'
+            image={require('./ambassadors/heather.jpg')}
+            bio={'My name is Heather Dials and I am an opera singer, voice teacher, mother and wife. When I look at examples of people who have improved the world, it is usually done through giving without wanting anything in return. I would like to do that with music. Being a part of OStM has been a true gift. To witness the joy music brings is all the reason I need to want to be a part of this wonderful organization.' }
+          />
+          <Bio
             className='pat member-container'
             textClass='pat-text member-text'
             name='Pat'
