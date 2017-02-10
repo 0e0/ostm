@@ -4,7 +4,7 @@ export default React.createClass({
   render() {
     return (
       <div className="first-blog">
-        <h1>Our Reason for Being</h1>
+        <h1 className='blog-title'>Our Reason for Being</h1>
         <h3>What is OStM trying to fix?</h3>
           <p>Operation Spread the Music was created in response to
           the segregation present in the community.

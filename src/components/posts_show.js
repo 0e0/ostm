@@ -3,6 +3,11 @@ import { connect } from 'react-redux';
 import { fetchPost, deletePost } from '../actions/index';
 import { Link } from 'react-router';
 
+// <button
+//   onClick={this.onDeleteClick.bind(this)}>
+//   Delete Post
+// </button>
+
 class PostsShow extends Component {
   static contextTypes = {
     router: PropTypes.object
@@ -28,11 +33,8 @@ class PostsShow extends Component {
 
     return (
       <div>
-        <Link to="/">Back to Posts</Link>
-        <button
-          onClick={this.onDeleteClick.bind(this)}>
-          Delete Post
-        </button>
+        <Link to="/events"><button className='cancel-btn'>Back to events</button></Link>
+
         <h1>{post.name}</h1>
         <h1>{post.piece}</h1>
         <h1>{post.duration}</h1>

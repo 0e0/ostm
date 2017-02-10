@@ -56,7 +56,6 @@ export function fetchPosts() {
   };
 }
 
-//febuary 4
 export function createPost(props) {
   const request = axios.post(`${ROOT_URL}/performer?${API_KEY}`, props);
 
