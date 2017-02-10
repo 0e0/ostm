@@ -22,22 +22,21 @@ export default React.createClass({
               </Link>
             </div>
             <div className='toJoin'>
+              <h2 className="join-question">WHO can join?</h2>
+                <h4 className='join-answer'>Anyone can join! Come to our open rehearsals that are held every week.</h4>
+              <h2 className="join-question">WHERE are the rehearsals?</h2>
+                <h4 className='join-answer'>Good Samaritan 3025 Terrace Dr, Las Cruces, NM 88011, We will be in the Creative Arts Room at Good Samaritan.</h4>
+              <h2 className="join-question">WHEN does the rehearsal start?</h2>
+                <h4 className='join-answer'>Every Tuesday from 5:45 PM to 6:30 PM, but you can stop by at anytime during the rehearsal.</h4>
 
-              <h2>WHO can join?</h2>
-                <h4>Anyone can join! Come to our open rehearsals that are held every week.</h4>
-              <h2>WHERE are the rehearsals?</h2>
-                <h4>Good Samaritan 3025 Terrace Dr, Las Cruces, NM 88011, We will be in the Creative Arts Room at Good Samaritan.</h4>
-              <h2>WHEN does the rehearsal start?</h2>
-                <h4>Every Tuesday from 5:45 PM to 6:30 PM, but you can stop by at anytime during the rehearsal.</h4>
-
-              <h2>WHAT piece to perform?</h2>
-                <h4>Uplifting, easy-going pieces are always welcome! Please try to keep our audience in mind when choosing your pieces.</h4>
-              <h2>WHEN to submit copy of music?</h2>
-                <h4>Email a pdf copy of your sheet music to operationspreadthemusic@gmail.com a week prior to the first rehearsal of the blitz you are performing for.</h4>
-              <h2>WHO needs to submit music?</h2>
-                <h4>Performers who needs accompaniment are required to submit their music as soon as possible.</h4>
-              <h2>WHERE do I get more information about a specific blitz or rehearsal?</h2>
-                <h4>More information can be found in our <span><Link to="/events" className='events-page'>events
+              <h2 className="join-question">WHAT piece to perform?</h2>
+                <h4 className='join-answer'>Uplifting, easy-going pieces are always welcome! Please try to keep our audience in mind when choosing your pieces.</h4>
+              <h2 className="join-question">WHEN to submit copy of music?</h2>
+                <h4 className='join-answer'>Email a pdf copy of your sheet music to operationspreadthemusic@gmail.com a week prior to the first rehearsal of the blitz you are performing for.</h4>
+              <h2 className="join-question">WHO needs to submit music?</h2>
+                <h4 className='join-answer'>Performers who needs accompaniment are required to submit their music as soon as possible.</h4>
+              <h2 className="join-question">WHERE do I get more information about a specific blitz or rehearsal?</h2>
+                <h4 className='join-answer'>More information can be found in our <span><Link to="/events" className='events-page'>events
                   </Link></span> page.</h4>
 
             </div>

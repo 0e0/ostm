@@ -28,7 +28,6 @@ export default class Events extends Component {
             <h1 className="signup">Performance Sign-up</h1>
             </Link>
           <div className="blitz-rehearsals">
-
           <h3 className="rehearsal-time">Rehearsals are held every Tuesday from 5:45 pm to 6:30 pm in Good Samaritan Creative Arts Room</h3>
           <div className="west">
             <h2>W = West Blitz</h2>
