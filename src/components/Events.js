@@ -95,7 +95,7 @@ export default class Events extends Component {
         <h1 className="list">performers list</h1>
         <Tabs
         onSelect={this.handleSelect}
-        selectedIndex={1}
+        selectedIndex={2}
         className='event-tabs'
         >
 
