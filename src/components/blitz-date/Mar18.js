@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import  { fetchFeb11 } from '../actions/index';
+import  { fetchMar18 } from '../../actions/index';
 import { Link } from 'react-router';
 
-class Feb11 extends Component {
+class Mar18 extends Component {
   componentWillMount() {
-    this.props.fetchFeb11();
+    this.props.fetchMar18();
   }
 
-  renderFeb11() {
+  renderMar18() {
     return this.props.posts.map((post) => {
       console.log(post.name);
       return (
@@ -26,10 +26,11 @@ class Feb11 extends Component {
     return (
       <div>
         <ol>
-          <h3>{this.renderFeb11()}</h3>
+          <h3>{this.renderMar18()}</h3>
         </ol>
         <hr/>
-        <h3 className="rehearsal-date">Rehearsal Dates | 1-31 & 2-7</h3>
+        <h3 className="rehearsal-date">Rehearsal Dates | 3-7 & 3-14</h3>
+        <h3 className="rehearsal-date">Accompanist | David</h3>
       </div>
     );
   }
@@ -39,4 +40,4 @@ function mapStateToProps(state) {
   return { posts: state.posts.all };
 }
 
-export default connect(mapStateToProps, { fetchFeb11 })(Feb11);
+export default connect(mapStateToProps, { fetchMar18 })(Mar18);

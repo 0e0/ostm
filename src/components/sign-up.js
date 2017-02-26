@@ -55,7 +55,9 @@ class Signup extends Component {
             <option>Feb4</option>
             <option>Feb11</option>
             <option>Mar4</option>
-            <option>Mar11</option>
+            <option>Mar18</option>
+            <option>Apr1</option>
+            <option>Apr22</option>
           </select>
           <div className="text-help form-control-label">
             {date.touched ? date.error : ''}

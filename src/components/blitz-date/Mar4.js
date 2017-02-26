@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import  { fetchMar4 } from '../actions/index';
+import  { fetchMar4 } from '../../actions/index';
 import { Link } from 'react-router';
 
 class Mar4 extends Component {
@@ -30,6 +30,7 @@ class Mar4 extends Component {
         </ol>
         <hr/>
         <h3 className="rehearsal-date">Rehearsal Dates | 2-21 & 2-28</h3>
+        <h3 className="rehearsal-date">Accompanist | Charlotte</h3>
       </div>
     );
   }

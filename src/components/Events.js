@@ -4,11 +4,12 @@ import { Link } from 'react-router';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { RouteTransition } from 'react-router-transition';
 
-import Feb4 from './Feb4';
-import Feb11 from './Feb11';
-import Mar4 from './Mar4';
-import Mar11 from './Mar11';
-
+import Feb4 from './blitz-date/Feb4';
+import Feb11 from './blitz-date/Feb11';
+import Mar4 from './blitz-date/Mar4';
+import Mar18 from './blitz-date/Mar18';
+import Apr1 from './blitz-date/Apr1';
+import Apr22 from './blitz-date/Apr22';
 
 export default class Events extends Component {
   render() {
@@ -103,7 +104,9 @@ export default class Events extends Component {
           <Tab>W | 2.4</Tab>
           <Tab>E | 2.11</Tab>
           <Tab>W | 3.4</Tab>
-          <Tab>E | 3.11</Tab>
+          <Tab>E | 3.18</Tab>
+          <Tab>W | 4.1</Tab>
+          <Tab>E | 4.22</Tab>
         </TabList>
           <TabPanel>
             <div><Feb4 /></div>
@@ -115,7 +118,13 @@ export default class Events extends Component {
             <div><Mar4 /></div>
           </TabPanel>
           <TabPanel>
-            <div><Mar11 /></div>
+            <div><Mar18 /></div>
+          </TabPanel>
+          <TabPanel>
+            <div><Apr1 /></div>
+          </TabPanel>
+          <TabPanel>
+            <div><Apr22 /></div>
           </TabPanel>
       </Tabs>
 

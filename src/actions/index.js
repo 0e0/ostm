@@ -38,14 +38,34 @@ export function fetchMar4() {
   };
 }
 
-export function fetchMar11() {
-  const request = axios.get(`${ROOT_URL}/performer?q={'date': {$eq: 'Mar11'}}&${API_KEY}`);
+export function fetchMar18() {
+  const request = axios.get(`${ROOT_URL}/performer?q={'date': {$eq: 'Mar18'}}&${API_KEY}`);
 
   return {
     type: FETCH_POSTS,
     payload: request
   };
 }
+
+export function fetchApr1() {
+  const request = axios.get(`${ROOT_URL}/performer?q={'date': {$eq: 'Apr1'}}&${API_KEY}`);
+
+  return {
+    type: FETCH_POSTS,
+    payload: request
+  };
+}
+
+export function fetchApr22() {
+  const request = axios.get(`${ROOT_URL}/performer?q={'date': {$eq: 'Apr22'}}&${API_KEY}`);
+
+  return {
+    type: FETCH_POSTS,
+    payload: request
+  };
+}
+
+
 
 export function fetchPosts() {
   const request = axios.get(`${ROOT_URL}/performer?q={'date': {$eq: 'Feb4'}}&${API_KEY}`);

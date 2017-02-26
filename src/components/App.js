@@ -22,7 +22,8 @@ export default class App extends Component {
       <div className="landing">
             <div className="arrow-btn-up">
               <Link to="/team"><h4 className="membership-btn">team</h4></Link>
-              <Link className="arrow" to="/team"><img src={require('./images/arrow-up.png')} /></Link>
+              <Link className="arrow" to="/team">
+              </Link>
             </div>
             <div className="arrow-btn-right">
                 <Link to="/blog"><img src={require("./images/arrow-right.png")} /></Link>
