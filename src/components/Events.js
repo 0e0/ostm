@@ -29,7 +29,9 @@ export default class Events extends Component {
             <h1 className="signup">Performance Sign-up</h1>
             </Link>
           <div className="blitz-rehearsals">
-          <h3 className="rehearsal-time">Rehearsals are held every Tuesday from 5:45 pm to 6:30 pm in Good Samaritan Creative Arts Room</h3>
+          <h3 className="rehearsal-time">Rehearsals are held every Tuesday from 5:45 pm to 6:30 pm in Good Samaritan Creative Arts Room, please refer to the <a href="#performers">Performers List</a> to know the specific rehearsl date for each blitz.</h3>
+
+          <h3 className="rehearsal-time">Directly below is the time and location of the nursing homes we are visiting. On the day of the blitz, we will meet 15 minutes before the performance begins. For example, we begin our West Blitzes at 9:45 AM in Arbors del Rey, we will meet there at 9:30 AM.</h3>
           <div className="west">
             <h2>W = West Blitz</h2>
             <table>
@@ -88,12 +90,11 @@ export default class Events extends Component {
               </tr>
             </table>
           </div>
-
           </div>
 
         </div>
         <div>
-        <h1 className="list">performers list</h1>
+        <h1 id="performers" className="list">performers list</h1>
         <Tabs
         onSelect={this.handleSelect}
         selectedIndex={2}
