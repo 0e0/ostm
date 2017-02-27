@@ -30,6 +30,10 @@ class Feb4 extends Component {
         </ol>
         <hr/>
         <h3 className="rehearsal-date">Rehearsal Dates | 1-24 & 1-31</h3>
+        <Link to="/signup">
+          <h1 className="signup">Performance Sign-up</h1>
+        </Link>
+        
       </div>
     );
   }

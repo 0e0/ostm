@@ -31,6 +31,10 @@ class Apr22 extends Component {
         <hr/>
         <h3 className="rehearsal-date">Rehearsal Dates | 3-11 & 3-18</h3>
         <h3 className="rehearsal-date">Accompanist | David</h3>
+        <Link to="/signup">
+          <h1 className="signup">Performance Sign-up</h1>
+        </Link>
+        
       </div>
     );
   }

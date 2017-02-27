@@ -25,12 +25,16 @@ class Mar4 extends Component {
   render() {
     return (
       <div>
-        <ol>
+        <ol className="performers-list">
           <h3>{this.renderMar4()}</h3>
         </ol>
         <hr/>
         <h3 className="rehearsal-date">Rehearsal Dates | 2-21 & 2-28</h3>
         <h3 className="rehearsal-date">Accompanist | Charlotte</h3>
+        <Link to="/signup">
+          <h1 className="signup">Performance Sign-up</h1>
+        </Link>
+        
       </div>
     );
   }

@@ -27,8 +27,7 @@ export default React.createClass({
               <h2 className="join-question">WHERE are the rehearsals?</h2>
                 <h4 className='join-answer'>Good Samaritan 3025 Terrace Dr, Las Cruces, NM 88011, We will be in the Creative Arts Room at Good Samaritan.</h4>
               <h2 className="join-question">WHEN does the rehearsal start?</h2>
-                <h4 className='join-answer'>Every Tuesday from 5:45 PM to 6:30 PM, but you can stop by at anytime during the rehearsal.</h4>
-
+                <h4 className='join-answer'>Every Tuesday from 5:45 PM to 6:30 PM. Please be on time.</h4>
               <h2 className="join-question">WHAT piece to perform?</h2>
                 <h4 className='join-answer'>Uplifting, easy-going pieces are always welcome! Please try to keep our audience in mind when choosing your pieces.</h4>
               <h2 className="join-question">WHEN to submit copy of music?</h2>
@@ -38,14 +37,9 @@ export default React.createClass({
               <h2 className="join-question">WHERE do I get more information about a specific blitz or rehearsal?</h2>
                 <h4 className='join-answer'>More information can be found in our <span><Link to="/events" className='events-page'>events
                   </Link></span> page.</h4>
-
             </div>
-
           </div>
-            <div>
-
-            <h1 className='facebook'><a className='facebook-link' href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
-          </div>
+          <h1 className='facebook'><a className='facebook-link' href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
           <div className="more-info">
           <h3>For more questions, feel free to email us at operationspreadthemusic@gmail.com</h3>
           </div>
