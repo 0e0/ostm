@@ -11,23 +11,23 @@ export default React.createClass({
           <th>Location</th>
           </tr>
           <tr>
-            <td>11:00 AM</td>
+            <td>11:00 AM </td>
             <td>Sagecrest</td>
           </tr>
           <tr>
-            <td>12:00 PM</td>
+            <td>12:00 PM </td>
             <td>Golden Mesa</td>
           </tr>
           <tr>
-            <td>12:30 PM</td>
+            <td>12:30 PM </td>
             <td>Lunch (TBA)</td>
           </tr>
           <tr>
-            <td>1:30 PM</td>
+            <td>1:30 PM </td>
             <td>Aristocrat</td>
           </tr>
           <tr>
-            <td>2:30 PM</td>
+            <td>2:30 PM </td>
             <td>Good Samaritan</td>
           </tr>
         </table>

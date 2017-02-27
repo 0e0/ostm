@@ -41,7 +41,7 @@ export default React.createClass({
           </div>
           <h1 className='facebook'><a className='facebook-link' href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
           <div className="more-info">
-          <h3>For more questions, feel free to email us at operationspreadthemusic@gmail.com</h3>
+          <h3>For more information, feel free to email us at operationspreadthemusic@gmail.com</h3>
           </div>
         </RouteTransition>
       </div>
