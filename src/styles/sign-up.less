@@ -28,10 +28,18 @@
 
 @media screen and (max-width: 540px) {
   .form-group {
-    margin-left: 20px;
+    margin-left: 10%;
     margin-bottom: 10px;
     display: inline-table;
   }
+
+  .important-btn {
+    text-align: left;
+  }
+}
+
+.form-control-label {
+  color: @red;
 }
 
 option {
@@ -80,6 +88,7 @@ option {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 10px;
+  color: black!important;
 }
 
 .accompanist-message {
@@ -88,9 +97,13 @@ option {
   background-color: @yellow;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
   .accompanist-message {
     font-size: 16px;
+  }
 
+  .important-btn {
+    text-align: left!important;
+    margin-left: 10%;
   }
 }

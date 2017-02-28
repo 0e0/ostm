@@ -99,8 +99,8 @@ class Signup extends Component {
           <div className='important-btn'>
           <button type="submit" className="submit-btn"><h2>Submit</h2></button>
           <button className="cancel-btn"><Link to="/events"><h2>Cancel</h2></Link></button>
-          <h3 className="accompanist-message">*if you indicated yes in the accompanist option, please email your music to operationspreadthemusic@gmail.com a week before the first scheduled rehearsal.</h3>
         </div>
+        <h3 className="accompanist-message">*if you indicated yes in the accompanist option, please email your music to operationspreadthemusic@gmail.com a week before the first scheduled rehearsal.</h3>
       </form>
       </div>
     );

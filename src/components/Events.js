@@ -29,7 +29,7 @@ export default class Events extends Component {
           <h1>events</h1>
           <Link to="/"><img src={require('./images/home-button.png')} /></Link>
           <div className="blitz-rehearsals">
-          <h3 className="rehearsal-time">Rehearsals are held every Tuesday from 5:45 pm to 6:30 pm in Good Samaritan Creative Arts Room, please refer to the <a href="#performers">performance information</a> for more details.</h3>
+          <h3 className="rehearsal-time">Rehearsals are held every Tuesday from 5:45 pm to 6:30 pm in Good Samaritan Creative Arts Room, please refer to the <a href="#performers">performance information</a> section for more details.</h3>
           <hr />
           <h3 className="performance-time">Directly below is the time and location of the nursing homes we are visiting. On the day of the blitz, we will meet 15 minutes before the performance begins. For example, we begin our West Blitzes at 9:45 AM in Arbors del Rey, which means we will meet there no later than 9:30 AM.</h3>
           </div>

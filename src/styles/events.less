@@ -10,6 +10,9 @@
   a {
     color: @blue!important;
   }
+  h1 {
+    color: white;
+  }
 }
 
 table {
@@ -27,12 +30,14 @@ table {
   padding: 15px;
 }
 
-li {
+.performer {
   color: black!important;
+  text-align: left;
 }
 
 .performers-list {
   min-width: 40%!important;
+  text-align: left!important;
 }
 
 .west, .east {
@@ -103,12 +108,11 @@ li {
 }
 }
 
-
 @media screen and (min-width: 770px) {
 .performance-info {
  width: 100%;
  display: flex;                  /* establish flex container */
- flex-direction: row;            /* default value; can be omitted */             /* default value; can be omitted */
+ flex-direction: row;            /* default value; can be omitted */
  justify-content: space-around; /* switched from default (flex-start, see below) */
 }
 }

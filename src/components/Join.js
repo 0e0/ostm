@@ -23,7 +23,7 @@ export default React.createClass({
             </div>
             <div className='toJoin'>
               <h2 className="join-question">WHO can join?</h2>
-                <h4 className='join-answer'>Anyone can join! Come to our open rehearsals that are held every week.</h4>
+                <h4 className='join-answer'>Anyone can join! Come to our open rehearsals that are held every week so we can conduct a placement audition. For more information on the placement audition process, please email us!</h4>
               <h2 className="join-question">WHERE are the rehearsals?</h2>
                 <h4 className='join-answer'>Good Samaritan 3025 Terrace Dr, Las Cruces, NM 88011, We will be in the Creative Arts Room at Good Samaritan.</h4>
               <h2 className="join-question">WHEN does the rehearsal start?</h2>

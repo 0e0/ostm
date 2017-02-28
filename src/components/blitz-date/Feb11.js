@@ -12,7 +12,7 @@ class Feb11 extends Component {
     return this.props.posts.map((post) => {
       console.log(post.name);
       return (
-        <li key={post._id.$oid}>
+        <li className="performer" key={post._id.$oid}>
           <Link to={"/posts/" + post._id.$oid}>
           <strong>{post.name} |</strong>
           <span> {post.piece}</span>
