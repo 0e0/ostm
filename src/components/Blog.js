@@ -22,6 +22,9 @@ export default React.createClass({
             </div>
             <ReasonforBeing />
           </div>
+          <div className="more-info">
+          <h3>For more information, feel free to email us at operationspreadthemusic@gmail.com</h3>
+          </div>
         </RouteTransition>
       </div>
     );

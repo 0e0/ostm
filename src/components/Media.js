@@ -21,6 +21,9 @@ export default React.createClass({
               <img className='eight' src={require('./images/media/8.jpg')} />
               <img className='nine' src={require('./images/media/9.jpg')} />
           </div>
+          <div className="more-info">
+          <h3>For more information, feel free to email us at operationspreadthemusic@gmail.com</h3>
+          </div>
           </div>
 
         </div>
