@@ -17,56 +17,90 @@ class Signup extends Component {
   };
 
   render() {
-    const { fields: { name, piece, duration, date }, handleSubmit } = this.props;
+    const { fields: { name, piece, duration, accompanist, date }, handleSubmit } = this.props;
 
     return (
       <div className="whole-form-page">
-      <h1>Performance Sign-up</h1>
+      <h1 className="performance-signup-title">Performance Sign-up</h1>
       <form className='form' onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 
         <div className={`form-group ${name.touched && name.invalid ? 'has-danger' : ''}`}>
-          <label>Full Name </label>
-          <input type="text" className="form-control" {...name}/>
-          <div className="text-help form-control-label">
-            {name.touched ? name.error : ''}
+          <div>
+            <label>Full Name </label>
+          </div>
+          <div>
+            <input type="text" className="form-control" {...name}/>
+              <div className="text-help form-control-label">
+                {name.touched ? name.error : ''}
+              </div>
           </div>
         </div>
 
         <div className={`form-group ${piece.touched && piece.invalid ? 'has-danger' : ''}`}>
+          <div>
           <label>Piece </label>
+          </div>
+          <div>
           <input type="text" className="form-control" {...piece}/>
           <div className="text-help form-control-label">
             {piece.touched ? piece.error : ''}
           </div>
+          </div>
         </div>
 
         <div className={`form-group ${duration.touched && duration.invalid ? 'has-danger' : ''}`}>
-          <label>Duration </label>
-          <input type="text" className="form-control" {...duration}/>
-          <div className="text-help form-control-label">
-            {duration.touched ? duration.error : ''}
+          <div>
+            <label>Duration </label>
+          </div>
+          <div>
+            <input type="text" className="form-control" {...duration}/>
+            <div className="text-help form-control-label">
+              {duration.touched ? duration.error : ''}
+            </div>
+          </div>
+        </div>
+
+        <div className={`form-group ${accompanist.touched && accompanist.invalid ? 'has-danger' : ''}`}>
+          <div>
+            <label>*Accompanist </label>
+          </div>
+          <div>
+            <select className="date-select" {...accompanist}>
+              <option />
+              <option>yes</option>
+              <option>no</option>
+            </select>
+            <div className="text-help form-control-label">
+              {accompanist.touched ? accompanist.error : ''}
+            </div>
           </div>
         </div>
 
         <div className={`form-group ${date.touched && date.invalid ? 'has-danger' : ''}`}>
-          <label>Date </label>
-          <select className="date-select" {...date}>
-            <option />
-            <option>Feb4</option>
-            <option>Feb11</option>
-            <option>Mar4</option>
-            <option>Mar18</option>
-            <option>Apr1</option>
-            <option>Apr22</option>
-          </select>
-          <div className="text-help form-control-label">
-            {date.touched ? date.error : ''}
+          <div>
+            <label>Date </label>
+          </div>
+          <div>
+            <select className="date-select" {...date}>
+              <option />
+              <option>Feb4</option>
+              <option>Feb11</option>
+              <option>Mar4</option>
+              <option>Mar18</option>
+              <option>Apr1</option>
+              <option>Apr22</option>
+            </select>
+            <div className="text-help form-control-label">
+              {date.touched ? date.error : ''}
+            </div>
           </div>
         </div>
 
-        <button type="submit" className="submit-btn"><h2>Submit</h2></button>
-        <button className="cancel-btn"><Link to="/events"><h2>Cancel</h2></Link></button>
-
+          <div className='important-btn'>
+          <button type="submit" className="submit-btn"><h2>Submit</h2></button>
+          <button className="cancel-btn"><Link to="/events"><h2>Cancel</h2></Link></button>
+          <h3 className="accompanist-message">*if you indicated yes in the accompanist option, please email your music to operationspreadthemusic@gmail.com a week before the first scheduled rehearsal.</h3>
+        </div>
       </form>
       </div>
     );
@@ -88,6 +122,10 @@ function validate(values) {
     errors.duration = 'Enter Piece Duration';
   }
 
+  if (!values.accompanist) {
+    errors.accompanist = 'Need Accompaniment?';
+  }
+
   if (!values.date) {
     errors.date = 'Enter Date';
   }
@@ -97,6 +135,6 @@ function validate(values) {
 
 export default reduxForm({
   form: 'PostsNewForm',
-  fields: ['name', 'piece', 'duration', 'date'],
+  fields: ['name', 'piece', 'duration', 'accompanist', 'date'],
   validate
 }, null, { createPost })(Signup);

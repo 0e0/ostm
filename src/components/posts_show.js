@@ -35,9 +35,10 @@ class PostsShow extends Component {
       <div>
         <Link to="/events"><button className='cancel-btn'>Back to events</button></Link>
 
-        <h1>{post.name}</h1>
-        <h1>{post.piece}</h1>
-        <h1>{post.duration}</h1>
+        <h1>Full Name | {post.name}</h1>
+        <h1>Title | {post.piece}</h1>
+        <h1>Duration | {post.duration}</h1>
+        <h1>Accompaniment | {post.accompanist}</h1>
       </div>
     );
   }

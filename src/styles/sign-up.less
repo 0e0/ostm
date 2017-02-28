@@ -1,19 +1,37 @@
 
 .form {
   background: @gray;
-  text-align: center;
-  max-height: 500px;
-  max-width: 700px;
+  text-align: left;
+  max-height: 700px;
+  max-width: 600px;
+  min-width: 290px;
   padding-top: 40px;
+  padding-right: auto;
+  padding-left: auto;
   margin-left: auto;
   margin-right: auto;
   font-family: @rale;
   font-weight: bold;
+  margin-top: 15px;
 }
 
-.form-group {
-  margin-bottom: 10px;
-  font-family: @rale;
+@media screen and (min-width: 540px) {
+  .form-group {
+    padding-left: 10%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .form-group {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: inline-table;
+  }
 }
 
 option {
@@ -27,20 +45,33 @@ option {
   font-size: 20px;
 }
 
-h1 {
+.performance-signup-title {
   color: white;
   text-align: center;
   font-family: @rale;
 }
 
+@media screen and (max-width: 335px) {
+  .performance-signup-title {
+    font-size: 27px;
+  }
+}
+
+.important-btn {
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .submit-btn {
+  text-align: center!important;
   background-color: @yellow;
   border: @lightgray;
   margin-right: 5px;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 20px;
-
 }
 
 .cancel-btn {
@@ -49,4 +80,17 @@ h1 {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 10px;
+}
+
+.accompanist-message {
+  color: black!important;
+  padding: 15px;
+  background-color: @yellow;
+}
+
+@media screen and (max-width: 360px) {
+  .accompanist-message {
+    font-size: 16px;
+
+  }
 }
