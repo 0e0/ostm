@@ -32,7 +32,7 @@ class PostsShow extends Component {
     }
 
     return (
-      <div>
+      <div className="signup-info">
         <Link to="/events"><button className='cancel-btn'>Back to events</button></Link>
 
         <h1>Full Name | {post.name}</h1>
