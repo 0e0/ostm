@@ -53,7 +53,6 @@ export default class App extends Component {
                 <Link to="/join"><img src={require("./images/arrow-down.png")} /></Link>
                 <Link to="/join"><h4 className="join-btn">join</h4></Link>
               </div>
-
       </div>
       </RouteTransition>
 

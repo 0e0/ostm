@@ -7,7 +7,7 @@ import ReasonforBeing from './blogs/11-8-16';
 export default React.createClass({
   render() {
     return (
-      <div className='text'>
+      <div className="blog-posts">
         <RouteTransition
           pathname={this.props.location.pathname}
           atEnter={{ translateX: 100 }}
@@ -17,7 +17,7 @@ export default React.createClass({
           >
           <div>
             <div>
-            <h1>blog</h1>
+            <h1 className='blog-page-title'>blog</h1>
             <Link to="/"><img src={require('./images/home-button.png')} /></Link>
             </div>
             <ReasonforBeing />
