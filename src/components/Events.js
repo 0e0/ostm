@@ -38,7 +38,7 @@ export default class Events extends Component {
         <h1 id="performers" className="list">performance information</h1>
         <Tabs
         onSelect={this.handleSelect}
-        selectedIndex={3}
+        selectedIndex={4}
         className='event-tabs'
         >
         <TabList>
