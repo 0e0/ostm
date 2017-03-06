@@ -37,10 +37,10 @@ export default class App extends Component {
             <div id="outer-container">
               <Menu left width={ 280 } outerContainerId={ "outer-container" }>
                 <RadiumLink className="bm-item-list" to="/"></RadiumLink>
-
                 <RadiumLink className="bm-item-list" to="/join">Join</RadiumLink>
                 <RadiumLink className="bm-item-list" to="/events">Events</RadiumLink>
                 <RadiumLink className="bm-item-list" to="/blog">Blog</RadiumLink>
+                <RadiumLink className="bm-item-list" to="/responsibilities">Responsibilities</RadiumLink>
                 <RadiumLink className="bm-item-list" to="/team">Team</RadiumLink>
                 <RadiumLink className="bm-item-list" to="/media">Media</RadiumLink>
                 <RadiumLink className="bm-item-list" to="/resources">Resources</RadiumLink>

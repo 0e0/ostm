@@ -38,7 +38,7 @@ export default class Events extends Component {
         <h1 id="performers" className="list">performance information</h1>
         <Tabs
         onSelect={this.handleSelect}
-        selectedIndex={2}
+        selectedIndex={3}
         className='event-tabs'
         >
         <TabList>
@@ -83,7 +83,7 @@ export default class Events extends Component {
 
       </div>
       <div className="more-info">
-      <h3>For more information, feel free to email us at operationspreadthemusic@gmail.com</h3>
+      <h3>For more information, email us at operationspreadthemusic@gmail.com</h3>
       </div>
       </RouteTransition>
       </div>

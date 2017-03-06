@@ -23,7 +23,7 @@ export default React.createClass({
             <ReasonforBeing />
           </div>
           <div className="more-info">
-          <h3>For more information, feel free to email us at operationspreadthemusic@gmail.com</h3>
+          <h3>For more information, email us at operationspreadthemusic@gmail.com</h3>
           </div>
         </RouteTransition>
       </div>

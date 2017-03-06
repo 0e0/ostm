@@ -13,6 +13,7 @@ import Join from './components/Join';
 import Events from './components/Events';
 import Team from './components/Team';
 import Blog from './components/Blog';
+import Responsibilities from './components/Responsibilities';
 import Media from './components/Media';
 import Signup from './components/sign-up';
 import PostsShow from './components/posts_show';
@@ -33,6 +34,7 @@ ReactDOM.render((
     <Route path="/credits" component={Credits} />
     <Route path="/events" component={Events} />
     <Route path="/team" component={Team} />
+    <Route path="/responsibilities" component={Responsibilities} />
     <Route path="/resources" component={Resources} />
     <Route path="/blog" component={Blog} />
     <Route path="/media" component={Media} />

@@ -23,7 +23,7 @@ export default React.createClass({
             </div>
             <div className='toJoin'>
               <h2 className="join-question">WHO can join?</h2>
-                <h4 className='join-answer'>Anyone can join! Come to our open rehearsals that are held every week so we can conduct a placement audition. For more information on the placement audition process, please email us!</h4>
+                <h4 className='join-answer'>Anyone can join! Come to our open rehearsals that are held every week so we can conduct a placement audition. For more information, refer to the <a href="#audition">placement audition criterias and process</a>.</h4>
               <h2 className="join-question">WHERE are the rehearsals?</h2>
                 <h4 className='join-answer'>Good Samaritan 3025 Terrace Dr, Las Cruces, NM 88011, We will be in the Creative Arts Room at Good Samaritan.</h4>
               <h2 className="join-question">WHEN does the rehearsal start?</h2>
@@ -39,9 +39,23 @@ export default React.createClass({
                   </Link></span> page.</h4>
             </div>
           </div>
+            <div id="audition">
+              <h1>placement audition criterias and process</h1>
+              <div className='toAudition'>
+                <h3>1. Does candidate have an ability to reasonably communicate through instrument or voice?</h3>
+                <h3>2. Is skill level reasonably pleasant?</h3>
+                <h3>3. Is music genre and content appropriate for OSTM?</h3>
+                <h3>4. Is singer able to project with reasonable volume and intonation? (i.e. Can they sing on key?)</h3>
+                <h3>5. Is candidate able to attend all rehearsals and performances?</h3>
+                <h3>6. Is candidate&#39;s attitude  respectful and appropriate for OStM?</h3>
+                <h3>7. Does candidate understand that performances are not just a venue to try out music, but a therapeutic service for assisted living patients?</h3>
+                <h3>8.  Is candidate a soloist or invited as a member of ensemble?</h3>
+              </div>
+            </div>
+
           <h1 className='facebook'><a className='facebook-link' href="https://www.facebook.com/operationspreadthemusic/">Facebook</a></h1>
           <div className="more-info">
-          <h3>For more information, feel free to email us at operationspreadthemusic@gmail.com</h3>
+          <h3>For more information, email us at operationspreadthemusic@gmail.com</h3>
           </div>
         </RouteTransition>
       </div>

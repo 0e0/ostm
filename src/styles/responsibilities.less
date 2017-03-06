@@ -1,0 +1,62 @@
+.responsibilities {
+  font-family: @rale;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reminder {
+  background-color: @gray;
+  color: black;
+  max-width: 900px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: @yellow;
+}
+
+.individual-responsibilities {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+}
+
+@media screen and (min-width: 600px) {
+  .individual-responsibilities {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+.responsibility-box {
+  max-width: 350px;
+  margin: 5px;
+  background-color: @gray;
+  color: black;
+  text-align: left;
+  padding: 15px;
+}
+
+
+.volunteers {
+  .responsibility-box;
+}
+
+.accompanist {
+  .responsibility-box;
+}
+
+.rehearsal-coordinator {
+  .responsibility-box;
+}
+
+.event-coordinator {
+  .responsibility-box;
+}
