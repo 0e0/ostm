@@ -27,7 +27,7 @@ export default React.createClass({
           <Responsibilities
             className='accompanist'
             title='accompanist'
-            one='1. Stay in contact with rehearsals or event coordinator.'
+            one='1. Stay in contact with rehearsal or event coordinator.'
             two='2. Print music.'
             three='3. Check email for music submissions.'
           />
