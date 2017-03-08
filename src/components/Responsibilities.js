@@ -48,6 +48,26 @@ export default React.createClass({
             className='event-coordinator'
             title='event coordinator'
             one='1. Contacts locations to set up performance dates.'
+            two='2. Works with Rehearsal Coordinator to ensure all interested performers are signed up on website.'
+            three='3. Works with RC to send out rehearsal reminders.'
+            four='4. Works with RC to ensure all music has been submitted.'
+            five='5. Recruits additional volunteers to fill in program after deadline.'
+          />
+
+          <Responsibilities
+            className='logistic-team-coordinator'
+            title='logistic team coordinator'
+            one='1. Foster open communication between members.'
+            two='2. Create a weekly meeting agenda.'
+            three='3. Preside over weekly meetings.'
+            four='4. Maintain and update website.'
+
+          />
+
+          <Responsibilities
+            className='publicity-coordinator'
+            title='publicity coordinator'
+            one='1. The responsiblities of the publicity coordinator is under review.'
 
           />
 
