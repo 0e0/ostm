@@ -29,7 +29,7 @@ class Apr22 extends Component {
           <h3>{this.renderApr22()}</h3>
         </ol>
         <hr/>
-        <h3 className="rehearsal-date">Rehearsal Dates | 3-11 & 3-18</h3>
+        <h3 className="rehearsal-date">Rehearsal Dates | 4-11 & 4-18</h3>
         <h3 className="rehearsal-date">Accompanist | David</h3>
         <Link to="/signup">
           <h1 className="signup">Performance Sign-up</h1>
