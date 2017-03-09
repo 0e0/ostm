@@ -65,6 +65,24 @@ export function fetchApr22() {
   };
 }
 
+export function fetchMay6() {
+  const request = axios.get(`${ROOT_URL}/performer?q={'date': {$eq: 'May6'}}&${API_KEY}`);
+
+  return {
+    type: FETCH_POSTS,
+    payload: request
+  };
+}
+
+export function fetchMay20() {
+  const request = axios.get(`${ROOT_URL}/performer?q={'date': {$eq: 'May20'}}&${API_KEY}`);
+
+  return {
+    type: FETCH_POSTS,
+    payload: request
+  };
+}
+
 
 
 export function fetchPosts() {

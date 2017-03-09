@@ -10,6 +10,8 @@ import Mar4 from './blitz-date/Mar4';
 import Mar18 from './blitz-date/Mar18';
 import Apr1 from './blitz-date/Apr1';
 import Apr22 from './blitz-date/Apr22';
+import May6 from './blitz-date/May6';
+import May20 from './blitz-date/May20';
 
 import West from './blitz-schedule/west';
 import East from './blitz-schedule/east';
@@ -48,6 +50,8 @@ export default class Events extends Component {
           <Tab>E | 3.18</Tab>
           <Tab>W | 4.1</Tab>
           <Tab>E | 4.22</Tab>
+          <Tab>W | 5.6</Tab>
+          <Tab>E | 5.20</Tab>
         </TabList>
           <TabPanel>
             <div><Feb4 /></div>
@@ -76,6 +80,18 @@ export default class Events extends Component {
           <TabPanel>
             <div className="performance-info">
               <Apr22 />
+              <East />
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="performance-info">
+              <May6 />
+              <West />
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="performance-info">
+              <May20 />
               <East />
             </div>
           </TabPanel>
