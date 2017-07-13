@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "webapp for ostm",
   "main": "index.js",
+  "engines": {
+    "node": "6.11.1",
+    "npm": "3.10.10"
+  },
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server --progress --inline --hot",
