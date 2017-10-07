@@ -8,6 +8,7 @@ export default React.createClass({
   render() {
     return (
       <div className='responsibilities'>
+      <h1>Operation Spread the Music</h1>
         <h1>responsibilities</h1>
         <Link to="/"><img src={require('./images/home-button.png')} /></Link>
         <div className='reminder'>

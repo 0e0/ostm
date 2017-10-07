@@ -6,6 +6,7 @@ export default React.createClass({
   render() {
     return (
       <div className='text'>
+        <h1>Operation Spread the Music</h1>
         <RouteTransition
           pathname={this.props.location.pathname}
           atEnter={{ translateY: 100 }}
@@ -14,6 +15,7 @@ export default React.createClass({
           mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
           >
           <div>
+
             <div>
             <h1>join</h1>
             <Link to="/"><img src={require('./images/home-button.png')} /></Link>

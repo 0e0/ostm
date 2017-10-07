@@ -8,6 +8,7 @@ export default React.createClass({
   render() {
     return (
       <div className="blog-posts">
+      <h1>Operation Spread the Music</h1>
         <RouteTransition
           pathname={this.props.location.pathname}
           atEnter={{ translateX: 100 }}

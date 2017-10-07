@@ -17,6 +17,7 @@ export default React.createClass({
         mapStyles={styles => ({ transform: `translateY(${styles.translateY}%)` })}
         >
       <div className='text text-membership'>
+      <h1>Operation Spread the Music</h1>
           <div className='team-header'>
           <h1>team</h1>
           <Link to="/"><img className="home-button" src={require('./images/home-button.png')} /></Link>

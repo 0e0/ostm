@@ -6,7 +6,7 @@ export default React.createClass({
 
     return (
       <div className='text'>
-
+            <h1>Operation Spread the Music</h1>
             <div>
               <h1>media</h1>
               <Link to="/"><img src={require('./images/home-button.png')} /></Link>

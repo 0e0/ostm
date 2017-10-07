@@ -20,6 +20,7 @@ export default class Events extends Component {
   render() {
     return (
       <div className="events">
+      <h1>Operation Spread the Music</h1>
       <RouteTransition
         pathname={this.props.location.pathname}
         atEnter={{ translateX: -100 }}
